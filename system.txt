@@ -1,0 +1,2155 @@
+create elevator:1 successfully!
+create elevator:2 successfully!
+create elevator:3 successfully!
+choice add new globaltask
+add flag=-1 ,floor=58 to globaltask
+someone wait down at 58 floor
+analyze the best blue print!
+--------------------------------
+--------------------------------GlobalTask.task["down"]=58 distancelist is [57, 57, 57]
+
+current elevators count is : 3< elevator:1 at 1 floor,destination=58,flag=1,isalive=True > accept the floor=58 you apply from globaltask
+
+ elevator:1 localtask is:set([])< elevator:1 at 1 floor,destination=58,flag=1,isalive=True > accept globaltask flag=down,floor=58try start new elevator
+
+
+elevator:1 is runing,current_floor is:1,destination is 58remove 58 from GlobalTask.task["down"]
+
+
+elevator:2 localtask is:set([])wait 1 second to accept new task
+
+elevator:2 is empty, at 1 floor
+
+elevator:3 localtask is:set([])< elevator:1 at 1 floor,destination=58,flag=1,isalive=True > dont need open the door 
+
+ elevator:3 is empty, at 1 floortry start new elevator
+
+
+GlobalTask.task["down"] is set([])
+--------------------------------
+--------------------------------
+wait 10 second reflash  elevator status
+try start new elevator< elevator:2 at 1 floor,destination=None,flag=0,isalive=True > dont need open the door 
+
+< elevator:3 at 1 floor,destination=None,flag=0,isalive=True > dont need open the door 
+set elevator:1 at 2 floor
+< elevator:1 at 2 floor,destination=58,flag=1,isalive=True > rearch  2 floor
+< elevator:1 at 2 floor,destination=58,flag=1,isalive=True > dont need open the door 
+< elevator:2 at 1 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!
+< elevator:3 at 1 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!
+set elevator:1 at 3 floor
+< elevator:1 at 3 floor,destination=58,flag=1,isalive=True > rearch  3 floor
+< elevator:1 at 3 floor,destination=58,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 4 floor
+< elevator:1 at 4 floor,destination=58,flag=1,isalive=True > rearch  4 floor
+< elevator:1 at 4 floor,destination=58,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 5 floor
+< elevator:1 at 5 floor,destination=58,flag=1,isalive=True > rearch  5 floor
+< elevator:1 at 5 floor,destination=58,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 6 floor
+< elevator:1 at 6 floor,destination=58,flag=1,isalive=True > rearch  6 floor
+< elevator:1 at 6 floor,destination=58,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 7 floor
+< elevator:1 at 7 floor,destination=58,flag=1,isalive=True > rearch  7 floor
+< elevator:1 at 7 floor,destination=58,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 8 floor
+< elevator:1 at 8 floor,destination=58,flag=1,isalive=True > rearch  8 floor
+< elevator:1 at 8 floor,destination=58,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 9 floor
+< elevator:1 at 9 floor,destination=58,flag=1,isalive=True > rearch  9 floor
+< elevator:1 at 9 floor,destination=58,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 10 floor
+< elevator:1 at 10 floor,destination=58,flag=1,isalive=True > rearch  10 floor
+< elevator:1 at 10 floor,destination=58,flag=1,isalive=True > dont need open the door 
+choice add localtask
+add localtask floor=42 to elevators[0],elevator name is:1
+< elevator:1 at 10 floor,destination=58,flag=1,isalive=True > accept the floor=42 you apply from localtask
+wait 1 second to accept new task
+set elevator:1 at 11 floor
+< elevator:1 at 11 floor,destination=58,flag=1,isalive=True > rearch  11 floor
+< elevator:1 at 11 floor,destination=58,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 12 floor
+< elevator:1 at 12 floor,destination=58,flag=1,isalive=True > rearch  12 floor
+< elevator:1 at 12 floor,destination=58,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 13 floor
+< elevator:1 at 13 floor,destination=58,flag=1,isalive=True > rearch  13 floor
+< elevator:1 at 13 floor,destination=58,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 14 floor
+< elevator:1 at 14 floor,destination=58,flag=1,isalive=True > rearch  14 floor
+< elevator:1 at 14 floor,destination=58,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 15 floor
+< elevator:1 at 15 floor,destination=58,flag=1,isalive=True > rearch  15 floor
+< elevator:1 at 15 floor,destination=58,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 16 floor
+< elevator:1 at 16 floor,destination=58,flag=1,isalive=True > rearch  16 floor
+< elevator:1 at 16 floor,destination=58,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 17 floor
+< elevator:1 at 17 floor,destination=58,flag=1,isalive=True > rearch  17 floor
+< elevator:1 at 17 floor,destination=58,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 18 floor
+< elevator:1 at 18 floor,destination=58,flag=1,isalive=True > rearch  18 floor
+< elevator:1 at 18 floor,destination=58,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 19 floor
+< elevator:1 at 19 floor,destination=58,flag=1,isalive=True > rearch  19 floor
+< elevator:1 at 19 floor,destination=58,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 20 floor
+< elevator:1 at 20 floor,destination=58,flag=1,isalive=True > rearch  20 floor
+< elevator:1 at 20 floor,destination=58,flag=1,isalive=True > dont need open the door 
+choice add new globaltask
+add flag=-1 ,floor=21 to globaltask
+someone wait down at 21 floor
+analyze the best blue print!
+GlobalTask.task["down"]=21 distancelist is [75, 20, 20]
+< elevator:2 at 1 floor,destination=21,flag=1,isalive=True > accept the floor=21 you apply from globaltask
+< elevator:2 at 1 floor,destination=21,flag=1,isalive=True > accept globaltask flag=down,floor=21
+remove 21 from GlobalTask.task["down"]
+wait 1 second to accept new task
+set elevator:1 at 21 floor
+< elevator:1 at 21 floor,destination=58,flag=1,isalive=True > rearch  21 floor
+< elevator:1 at 21 floor,destination=58,flag=1,isalive=True > dont need open the door 
+< elevator:2 at 1 floor,destination=21,flag=1,isalive=True > dont need open the door 
+< elevator:3 at 1 floor,destination=None,flag=0,isalive=True > dont need open the door 
+set elevator:1 at 22 floor
+< elevator:1 at 22 floor,destination=58,flag=1,isalive=True > rearch  22 floor
+< elevator:1 at 22 floor,destination=58,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 2 floor
+< elevator:2 at 2 floor,destination=21,flag=1,isalive=True > rearch  2 floor
+< elevator:2 at 2 floor,destination=21,flag=1,isalive=True > dont need open the door 
+< elevator:3 at 1 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!
+set elevator:1 at 23 floor
+< elevator:1 at 23 floor,destination=58,flag=1,isalive=True > rearch  23 floor
+< elevator:1 at 23 floor,destination=58,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 3 floor
+< elevator:2 at 3 floor,destination=21,flag=1,isalive=True > rearch  3 floor
+< elevator:2 at 3 floor,destination=21,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 24 floor
+< elevator:1 at 24 floor,destination=58,flag=1,isalive=True > rearch  24 floor
+< elevator:1 at 24 floor,destination=58,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 4 floor
+< elevator:2 at 4 floor,destination=21,flag=1,isalive=True > rearch  4 floor
+< elevator:2 at 4 floor,destination=21,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 25 floor
+< elevator:1 at 25 floor,destination=58,flag=1,isalive=True > rearch  25 floor
+< elevator:1 at 25 floor,destination=58,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 5 floor
+< elevator:2 at 5 floor,destination=21,flag=1,isalive=True > rearch  5 floor
+< elevator:2 at 5 floor,destination=21,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 26 floor
+< elevator:1 at 26 floor,destination=58,flag=1,isalive=True > rearch  26 floor
+< elevator:1 at 26 floor,destination=58,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 6 floor
+< elevator:2 at 6 floor,destination=21,flag=1,isalive=True > rearch  6 floor
+< elevator:2 at 6 floor,destination=21,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 27 floor
+< elevator:1 at 27 floor,destination=58,flag=1,isalive=True > rearch  27 floor
+< elevator:1 at 27 floor,destination=58,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 7 floor
+< elevator:2 at 7 floor,destination=21,flag=1,isalive=True > rearch  7 floor
+< elevator:2 at 7 floor,destination=21,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 8 floor
+< elevator:2 at 8 floor,destination=21,flag=1,isalive=True > rearch  8 floor
+< elevator:2 at 8 floor,destination=21,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 28 floor
+< elevator:1 at 28 floor,destination=58,flag=1,isalive=True > rearch  28 floor
+< elevator:1 at 28 floor,destination=58,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 9 floor
+< elevator:2 at 9 floor,destination=21,flag=1,isalive=True > rearch  9 floor
+< elevator:2 at 9 floor,destination=21,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 29 floor
+< elevator:1 at 29 floor,destination=58,flag=1,isalive=True > rearch  29 floor
+< elevator:1 at 29 floor,destination=58,flag=1,isalive=True > dont need open the door 
+choice add new globaltask
+add flag=1 ,floor=75 to globaltask
+someone wait up at 75 floor
+analyze the best blue print!
+GlobalTask.task["up"]=75 distancelist is [46, 66, 74]
+< elevator:1 at 29 floor,destination=75,flag=1,isalive=True > accept the floor=75 you apply from globaltask
+< elevator:1 at 29 floor,destination=75,flag=1,isalive=True > accept globaltask flag=up,floor=75
+remove 75 from GlobalTask.task["up"]
+wait 1 second to accept new task
+set elevator:2 at 10 floor
+< elevator:2 at 10 floor,destination=21,flag=1,isalive=True > rearch  10 floor
+< elevator:2 at 10 floor,destination=21,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 30 floor
+< elevator:1 at 30 floor,destination=75,flag=1,isalive=True > rearch  30 floor
+< elevator:1 at 30 floor,destination=75,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 11 floor
+< elevator:2 at 11 floor,destination=21,flag=1,isalive=True > rearch  11 floor
+< elevator:2 at 11 floor,destination=21,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 31 floor
+< elevator:1 at 31 floor,destination=75,flag=1,isalive=True > rearch  31 floor
+< elevator:1 at 31 floor,destination=75,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 12 floor
+< elevator:2 at 12 floor,destination=21,flag=1,isalive=True > rearch  12 floor
+< elevator:2 at 12 floor,destination=21,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 32 floor
+< elevator:1 at 32 floor,destination=75,flag=1,isalive=True > rearch  32 floor
+< elevator:1 at 32 floor,destination=75,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 13 floor
+< elevator:2 at 13 floor,destination=21,flag=1,isalive=True > rearch  13 floor
+< elevator:2 at 13 floor,destination=21,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 33 floor
+< elevator:1 at 33 floor,destination=75,flag=1,isalive=True > rearch  33 floor
+< elevator:1 at 33 floor,destination=75,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 14 floor
+< elevator:2 at 14 floor,destination=21,flag=1,isalive=True > rearch  14 floor
+< elevator:2 at 14 floor,destination=21,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 34 floor
+< elevator:1 at 34 floor,destination=75,flag=1,isalive=True > rearch  34 floor
+< elevator:1 at 34 floor,destination=75,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 15 floor
+< elevator:2 at 15 floor,destination=21,flag=1,isalive=True > rearch  15 floor
+< elevator:2 at 15 floor,destination=21,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 35 floor
+< elevator:1 at 35 floor,destination=75,flag=1,isalive=True > rearch  35 floor
+< elevator:1 at 35 floor,destination=75,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 16 floor
+< elevator:2 at 16 floor,destination=21,flag=1,isalive=True > rearch  16 floor
+< elevator:2 at 16 floor,destination=21,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 36 floor
+< elevator:1 at 36 floor,destination=75,flag=1,isalive=True > rearch  36 floor
+< elevator:1 at 36 floor,destination=75,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 17 floor
+< elevator:2 at 17 floor,destination=21,flag=1,isalive=True > rearch  17 floor
+< elevator:2 at 17 floor,destination=21,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 37 floor
+< elevator:1 at 37 floor,destination=75,flag=1,isalive=True > rearch  37 floor
+< elevator:1 at 37 floor,destination=75,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 18 floor
+< elevator:2 at 18 floor,destination=21,flag=1,isalive=True > rearch  18 floor
+< elevator:2 at 18 floor,destination=21,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 38 floor
+< elevator:1 at 38 floor,destination=75,flag=1,isalive=True > rearch  38 floor
+< elevator:1 at 38 floor,destination=75,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 19 floor
+< elevator:2 at 19 floor,destination=21,flag=1,isalive=True > rearch  19 floor
+< elevator:2 at 19 floor,destination=21,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 39 floor
+< elevator:1 at 39 floor,destination=75,flag=1,isalive=True > rearch  39 floor
+< elevator:1 at 39 floor,destination=75,flag=1,isalive=True > dont need open the door 
+choice add new globaltask
+add flag=1 ,floor=66 to globaltask
+someone wait up at 66 floor
+analyze the best blue print!
+GlobalTask.task["up"]=66 distancelist is [27, 47, 65]
+< elevator:1 at 39 floor,destination=75,flag=1,isalive=True > accept the floor=66 you apply from globaltask
+< elevator:1 at 39 floor,destination=75,flag=1,isalive=True > accept globaltask flag=up,floor=66
+remove 66 from GlobalTask.task["up"]
+wait 1 second to accept new task
+set elevator:2 at 20 floor
+< elevator:2 at 20 floor,destination=21,flag=1,isalive=True > rearch  20 floor
+< elevator:2 at 20 floor,destination=21,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 40 floor
+< elevator:1 at 40 floor,destination=75,flag=1,isalive=True > rearch  40 floor
+< elevator:1 at 40 floor,destination=75,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 21 floor
+< elevator:2 at 21 floor,destination=21,flag=1,isalive=True > rearch  21 floor
+open door for person who in < elevator:2 at 21 floor,destination=21,flag=1,isalive=True >,
+set elevator:1 at 41 floor
+< elevator:1 at 41 floor,destination=75,flag=1,isalive=True > rearch  41 floor
+< elevator:1 at 41 floor,destination=75,flag=1,isalive=True > dont need open the door 
+< elevator:3 at 1 floor,destination=None,flag=0,isalive=True > dont need open the door 
+set elevator:1 at 42 floor
+< elevator:1 at 42 floor,destination=75,flag=1,isalive=True > rearch  42 floor
+open door for person who in < elevator:1 at 42 floor,destination=75,flag=1,isalive=True >,
+< elevator:3 at 1 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!
+choice restart closed elevator
+try restart all stop elevator
+wait 1 second to accept new task
+< elevator:2 at 21 floor,destination=21,flag=1,isalive=True > reach destination:21,set flag=0
+< elevator:2 at 21 floor,destination=None,flag=0,isalive=True > dont need open the door 
+< elevator:2 at 21 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!
+set elevator:1 at 43 floor
+< elevator:1 at 43 floor,destination=75,flag=1,isalive=True > rearch  43 floor
+< elevator:1 at 43 floor,destination=75,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 44 floor
+< elevator:1 at 44 floor,destination=75,flag=1,isalive=True > rearch  44 floor
+< elevator:1 at 44 floor,destination=75,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 45 floor
+< elevator:1 at 45 floor,destination=75,flag=1,isalive=True > rearch  45 floor
+< elevator:1 at 45 floor,destination=75,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 46 floor
+< elevator:1 at 46 floor,destination=75,flag=1,isalive=True > rearch  46 floor
+< elevator:1 at 46 floor,destination=75,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 47 floor
+< elevator:1 at 47 floor,destination=75,flag=1,isalive=True > rearch  47 floor
+< elevator:1 at 47 floor,destination=75,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 48 floor
+< elevator:1 at 48 floor,destination=75,flag=1,isalive=True > rearch  48 floor
+< elevator:1 at 48 floor,destination=75,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 49 floor
+< elevator:1 at 49 floor,destination=75,flag=1,isalive=True > rearch  49 floor
+< elevator:1 at 49 floor,destination=75,flag=1,isalive=True > dont need open the door 
+choice restart closed elevator
+try restart all stop elevator
+wait 1 second to accept new task
+set elevator:1 at 50 floor
+< elevator:1 at 50 floor,destination=75,flag=1,isalive=True > rearch  50 floor
+< elevator:1 at 50 floor,destination=75,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 51 floor
+< elevator:1 at 51 floor,destination=75,flag=1,isalive=True > rearch  51 floor
+< elevator:1 at 51 floor,destination=75,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 52 floor
+< elevator:1 at 52 floor,destination=75,flag=1,isalive=True > rearch  52 floor
+< elevator:1 at 52 floor,destination=75,flag=1,isalive=True > dont need open the door 
+< elevator:3 at 1 floor,destination=None,flag=0,isalive=True > dont need open the door 
+set elevator:1 at 53 floor
+< elevator:1 at 53 floor,destination=75,flag=1,isalive=True > rearch  53 floor
+< elevator:1 at 53 floor,destination=75,flag=1,isalive=True > dont need open the door 
+< elevator:3 at 1 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!
+set elevator:1 at 54 floor
+< elevator:1 at 54 floor,destination=75,flag=1,isalive=True > rearch  54 floor
+< elevator:1 at 54 floor,destination=75,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 55 floor
+< elevator:1 at 55 floor,destination=75,flag=1,isalive=True > rearch  55 floor
+< elevator:1 at 55 floor,destination=75,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 56 floor
+< elevator:1 at 56 floor,destination=75,flag=1,isalive=True > rearch  56 floor
+< elevator:1 at 56 floor,destination=75,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 57 floor
+< elevator:1 at 57 floor,destination=75,flag=1,isalive=True > rearch  57 floor
+< elevator:1 at 57 floor,destination=75,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 58 floor
+< elevator:1 at 58 floor,destination=75,flag=1,isalive=True > rearch  58 floor
+open door for person who in < elevator:1 at 58 floor,destination=75,flag=1,isalive=True >,
+choice add localtask
+add localtask floor=99 to elevators[2],elevator name is:3
+< elevator:3 at 1 floor,destination=99,flag=1,isalive=True > accept the floor=99 you apply from localtask
+wait 1 second to accept new task
+< elevator:2 at 21 floor,destination=None,flag=0,isalive=True > dont need open the door 
+< elevator:2 at 21 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!
+set elevator:1 at 59 floor
+< elevator:1 at 59 floor,destination=75,flag=1,isalive=True > rearch  59 floor
+< elevator:1 at 59 floor,destination=75,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 60 floor
+< elevator:1 at 60 floor,destination=75,flag=1,isalive=True > rearch  60 floor
+< elevator:1 at 60 floor,destination=75,flag=1,isalive=True > dont need open the door 
+choice restart closed elevator
+try restart all stop elevator
+wait 1 second to accept new task
+set elevator:1 at 61 floor
+< elevator:1 at 61 floor,destination=75,flag=1,isalive=True > rearch  61 floor
+< elevator:1 at 61 floor,destination=75,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 62 floor
+< elevator:1 at 62 floor,destination=75,flag=1,isalive=True > rearch  62 floor
+< elevator:1 at 62 floor,destination=75,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 63 floor
+< elevator:1 at 63 floor,destination=75,flag=1,isalive=True > rearch  63 floor
+< elevator:1 at 63 floor,destination=75,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 64 floor
+< elevator:1 at 64 floor,destination=75,flag=1,isalive=True > rearch  64 floor
+< elevator:1 at 64 floor,destination=75,flag=1,isalive=True > dont need open the door 
+< elevator:3 at 1 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 65 floor
+< elevator:1 at 65 floor,destination=75,flag=1,isalive=True > rearch  65 floor
+< elevator:1 at 65 floor,destination=75,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 2 floor
+< elevator:3 at 2 floor,destination=99,flag=1,isalive=True > rearch  2 floor
+< elevator:3 at 2 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 66 floor
+< elevator:1 at 66 floor,destination=75,flag=1,isalive=True > rearch  66 floor
+open door for person who in < elevator:1 at 66 floor,destination=75,flag=1,isalive=True >,
+set elevator:3 at 3 floor
+< elevator:3 at 3 floor,destination=99,flag=1,isalive=True > rearch  3 floor
+< elevator:3 at 3 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 4 floor
+< elevator:3 at 4 floor,destination=99,flag=1,isalive=True > rearch  4 floor
+< elevator:3 at 4 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 5 floor
+< elevator:3 at 5 floor,destination=99,flag=1,isalive=True > rearch  5 floor
+< elevator:3 at 5 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 6 floor
+< elevator:3 at 6 floor,destination=99,flag=1,isalive=True > rearch  6 floor
+< elevator:3 at 6 floor,destination=99,flag=1,isalive=True > dont need open the door 
+choice add new elevator
+create elevator:4 successfully!
+current elevators count is:4
+create new Thread for elevator:4
+wait 1 second to accept new task
+set elevator:3 at 7 floor
+< elevator:3 at 7 floor,destination=99,flag=1,isalive=True > rearch  7 floor
+< elevator:3 at 7 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 8 floor
+< elevator:3 at 8 floor,destination=99,flag=1,isalive=True > rearch  8 floor
+< elevator:3 at 8 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 9 floor
+< elevator:3 at 9 floor,destination=99,flag=1,isalive=True > rearch  9 floor
+< elevator:3 at 9 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 10 floor
+< elevator:3 at 10 floor,destination=99,flag=1,isalive=True > rearch  10 floor
+< elevator:3 at 10 floor,destination=99,flag=1,isalive=True > dont need open the door 
+< elevator:2 at 21 floor,destination=None,flag=0,isalive=True > dont need open the door 
+set elevator:3 at 11 floor
+< elevator:3 at 11 floor,destination=99,flag=1,isalive=True > rearch  11 floor
+< elevator:3 at 11 floor,destination=99,flag=1,isalive=True > dont need open the door 
+< elevator:2 at 21 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!
+set elevator:3 at 12 floor
+< elevator:3 at 12 floor,destination=99,flag=1,isalive=True > rearch  12 floor
+< elevator:3 at 12 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 67 floor
+< elevator:1 at 67 floor,destination=75,flag=1,isalive=True > rearch  67 floor
+< elevator:1 at 67 floor,destination=75,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 13 floor
+< elevator:3 at 13 floor,destination=99,flag=1,isalive=True > rearch  13 floor
+< elevator:3 at 13 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 68 floor
+< elevator:1 at 68 floor,destination=75,flag=1,isalive=True > rearch  68 floor
+< elevator:1 at 68 floor,destination=75,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 14 floor
+< elevator:3 at 14 floor,destination=99,flag=1,isalive=True > rearch  14 floor
+< elevator:3 at 14 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 69 floor
+< elevator:1 at 69 floor,destination=75,flag=1,isalive=True > rearch  69 floor
+< elevator:1 at 69 floor,destination=75,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 15 floor
+< elevator:3 at 15 floor,destination=99,flag=1,isalive=True > rearch  15 floor
+< elevator:3 at 15 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 70 floor
+< elevator:1 at 70 floor,destination=75,flag=1,isalive=True > rearch  70 floor
+< elevator:1 at 70 floor,destination=75,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 16 floor
+< elevator:3 at 16 floor,destination=99,flag=1,isalive=True > rearch  16 floor
+< elevator:3 at 16 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 71 floor
+< elevator:1 at 71 floor,destination=75,flag=1,isalive=True > rearch  71 floor
+< elevator:1 at 71 floor,destination=75,flag=1,isalive=True > dont need open the door 
+--------------------------------
+--------------------------------
+current elevators count is : 4
+elevator:1 localtask is:set([75])
+elevator:1 is runing,current_floor is:71,destination is 75
+
+elevator:2 localtask is:set([])
+elevator:2 is empty, at 21 floor
+
+elevator:3 localtask is:set([99])
+elevator:3 is runing,current_floor is:16,destination is 99
+
+elevator:4 localtask is:set([])
+elevator:4 is empty, at 1 floor
+
+GlobalTask.task["down"] is set([])
+GlobalTask.task["up"] is set([])
+--------------------------------
+--------------------------------
+wait 10 second reflash  elevator status
+Thread-elevator-1 is runing
+Thread-elevator-2 is runing
+Thread-elevator-3 is runing
+try start new elevator
+< elevator:4 at 1 floor,destination=None,flag=0,isalive=True > dont need open the door 
+choice add localtask
+add localtask floor=12 to elevators[0],elevator name is:1
+< elevator:1 at 71 floor,destination=75,flag=1,isalive=True > cant accept the floor=12 you apply from localtask
+wait 1 second to accept new task
+set elevator:3 at 17 floor
+< elevator:3 at 17 floor,destination=99,flag=1,isalive=True > rearch  17 floor
+< elevator:3 at 17 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 72 floor
+< elevator:1 at 72 floor,destination=75,flag=1,isalive=True > rearch  72 floor
+< elevator:1 at 72 floor,destination=75,flag=1,isalive=True > dont need open the door 
+< elevator:4 at 1 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!
+set elevator:3 at 18 floor
+< elevator:3 at 18 floor,destination=99,flag=1,isalive=True > rearch  18 floor
+< elevator:3 at 18 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 73 floor
+< elevator:1 at 73 floor,destination=75,flag=1,isalive=True > rearch  73 floor
+< elevator:1 at 73 floor,destination=75,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 19 floor
+< elevator:3 at 19 floor,destination=99,flag=1,isalive=True > rearch  19 floor
+< elevator:3 at 19 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 74 floor
+< elevator:1 at 74 floor,destination=75,flag=1,isalive=True > rearch  74 floor
+< elevator:1 at 74 floor,destination=75,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 20 floor
+< elevator:3 at 20 floor,destination=99,flag=1,isalive=True > rearch  20 floor
+< elevator:3 at 20 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 75 floor
+< elevator:1 at 75 floor,destination=75,flag=1,isalive=True > rearch  75 floor
+open door for person who in < elevator:1 at 75 floor,destination=75,flag=1,isalive=True >,
+set elevator:3 at 21 floor
+< elevator:3 at 21 floor,destination=99,flag=1,isalive=True > rearch  21 floor
+< elevator:3 at 21 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 22 floor
+< elevator:3 at 22 floor,destination=99,flag=1,isalive=True > rearch  22 floor
+< elevator:3 at 22 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 23 floor
+< elevator:3 at 23 floor,destination=99,flag=1,isalive=True > rearch  23 floor
+< elevator:3 at 23 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 24 floor
+< elevator:3 at 24 floor,destination=99,flag=1,isalive=True > rearch  24 floor
+< elevator:3 at 24 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 25 floor
+< elevator:3 at 25 floor,destination=99,flag=1,isalive=True > rearch  25 floor
+< elevator:3 at 25 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 26 floor
+< elevator:3 at 26 floor,destination=99,flag=1,isalive=True > rearch  26 floor
+< elevator:3 at 26 floor,destination=99,flag=1,isalive=True > dont need open the door 
+choice add new elevator
+create elevator:5 successfully!
+current elevators count is:5
+create new Thread for elevator:5
+wait 1 second to accept new task
+set elevator:3 at 27 floor
+< elevator:3 at 27 floor,destination=99,flag=1,isalive=True > rearch  27 floor
+< elevator:3 at 27 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 28 floor
+< elevator:3 at 28 floor,destination=99,flag=1,isalive=True > rearch  28 floor
+< elevator:3 at 28 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 29 floor
+< elevator:3 at 29 floor,destination=99,flag=1,isalive=True > rearch  29 floor
+< elevator:3 at 29 floor,destination=99,flag=1,isalive=True > dont need open the door 
+< elevator:1 at 75 floor,destination=75,flag=1,isalive=True > reach destination:75,set flag=0
+< elevator:1 at 75 floor,destination=None,flag=0,isalive=True > dont need open the door 
+set elevator:3 at 30 floor
+< elevator:3 at 30 floor,destination=99,flag=1,isalive=True > rearch  30 floor
+< elevator:3 at 30 floor,destination=99,flag=1,isalive=True > dont need open the door 
+< elevator:1 at 75 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!
+set elevator:3 at 31 floor
+< elevator:3 at 31 floor,destination=99,flag=1,isalive=True > rearch  31 floor
+< elevator:3 at 31 floor,destination=99,flag=1,isalive=True > dont need open the door 
+< elevator:2 at 21 floor,destination=None,flag=0,isalive=True > dont need open the door 
+set elevator:3 at 32 floor
+< elevator:3 at 32 floor,destination=99,flag=1,isalive=True > rearch  32 floor
+< elevator:3 at 32 floor,destination=99,flag=1,isalive=True > dont need open the door 
+< elevator:2 at 21 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!
+set elevator:3 at 33 floor
+< elevator:3 at 33 floor,destination=99,flag=1,isalive=True > rearch  33 floor
+< elevator:3 at 33 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 34 floor
+< elevator:3 at 34 floor,destination=99,flag=1,isalive=True > rearch  34 floor
+< elevator:3 at 34 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 35 floor
+< elevator:3 at 35 floor,destination=99,flag=1,isalive=True > rearch  35 floor
+< elevator:3 at 35 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 36 floor
+< elevator:3 at 36 floor,destination=99,flag=1,isalive=True > rearch  36 floor
+< elevator:3 at 36 floor,destination=99,flag=1,isalive=True > dont need open the door 
+choice add new globaltask
+add flag=-1 ,floor=22 to globaltask
+someone wait down at 22 floor
+analyze the best blue print!
+GlobalTask.task["down"]=22 distancelist is [53, 1, 140, 21, 21]
+< elevator:2 at 21 floor,destination=22,flag=1,isalive=True > accept the floor=22 you apply from globaltask
+< elevator:2 at 21 floor,destination=22,flag=1,isalive=True > accept globaltask flag=down,floor=22
+remove 22 from GlobalTask.task["down"]
+wait 1 second to accept new task
+set elevator:3 at 37 floor
+< elevator:3 at 37 floor,destination=99,flag=1,isalive=True > rearch  37 floor
+< elevator:3 at 37 floor,destination=99,flag=1,isalive=True > dont need open the door 
+< elevator:4 at 1 floor,destination=None,flag=0,isalive=True > dont need open the door 
+set elevator:3 at 38 floor
+< elevator:3 at 38 floor,destination=99,flag=1,isalive=True > rearch  38 floor
+< elevator:3 at 38 floor,destination=99,flag=1,isalive=True > dont need open the door 
+< elevator:4 at 1 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!
+set elevator:3 at 39 floor
+< elevator:3 at 39 floor,destination=99,flag=1,isalive=True > rearch  39 floor
+< elevator:3 at 39 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 40 floor
+< elevator:3 at 40 floor,destination=99,flag=1,isalive=True > rearch  40 floor
+< elevator:3 at 40 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 41 floor
+< elevator:3 at 41 floor,destination=99,flag=1,isalive=True > rearch  41 floor
+< elevator:3 at 41 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 42 floor
+< elevator:3 at 42 floor,destination=99,flag=1,isalive=True > rearch  42 floor
+< elevator:3 at 42 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 43 floor
+< elevator:3 at 43 floor,destination=99,flag=1,isalive=True > rearch  43 floor
+< elevator:3 at 43 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 44 floor
+< elevator:3 at 44 floor,destination=99,flag=1,isalive=True > rearch  44 floor
+< elevator:3 at 44 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 45 floor
+< elevator:3 at 45 floor,destination=99,flag=1,isalive=True > rearch  45 floor
+< elevator:3 at 45 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 46 floor
+< elevator:3 at 46 floor,destination=99,flag=1,isalive=True > rearch  46 floor
+< elevator:3 at 46 floor,destination=99,flag=1,isalive=True > dont need open the door 
+choice add localtask
+add localtask floor=78 to elevators[1],elevator name is:2
+< elevator:2 at 21 floor,destination=78,flag=1,isalive=True > accept the floor=78 you apply from localtask
+wait 1 second to accept new task
+set elevator:3 at 47 floor
+< elevator:3 at 47 floor,destination=99,flag=1,isalive=True > rearch  47 floor
+< elevator:3 at 47 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 48 floor
+< elevator:3 at 48 floor,destination=99,flag=1,isalive=True > rearch  48 floor
+< elevator:3 at 48 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 49 floor
+< elevator:3 at 49 floor,destination=99,flag=1,isalive=True > rearch  49 floor
+< elevator:3 at 49 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 50 floor
+< elevator:3 at 50 floor,destination=99,flag=1,isalive=True > rearch  50 floor
+< elevator:3 at 50 floor,destination=99,flag=1,isalive=True > dont need open the door 
+< elevator:1 at 75 floor,destination=None,flag=0,isalive=True > dont need open the door 
+set elevator:3 at 51 floor
+< elevator:3 at 51 floor,destination=99,flag=1,isalive=True > rearch  51 floor
+< elevator:3 at 51 floor,destination=99,flag=1,isalive=True > dont need open the door 
+< elevator:1 at 75 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!
+< elevator:2 at 21 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 52 floor
+< elevator:3 at 52 floor,destination=99,flag=1,isalive=True > rearch  52 floor
+< elevator:3 at 52 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 22 floor
+< elevator:2 at 22 floor,destination=78,flag=1,isalive=True > rearch  22 floor
+open door for person who in < elevator:2 at 22 floor,destination=78,flag=1,isalive=True >,
+set elevator:3 at 53 floor
+< elevator:3 at 53 floor,destination=99,flag=1,isalive=True > rearch  53 floor
+< elevator:3 at 53 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 54 floor
+< elevator:3 at 54 floor,destination=99,flag=1,isalive=True > rearch  54 floor
+< elevator:3 at 54 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 55 floor
+< elevator:3 at 55 floor,destination=99,flag=1,isalive=True > rearch  55 floor
+< elevator:3 at 55 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 56 floor
+< elevator:3 at 56 floor,destination=99,flag=1,isalive=True > rearch  56 floor
+< elevator:3 at 56 floor,destination=99,flag=1,isalive=True > dont need open the door 
+choice add new elevator
+create elevator:6 successfully!
+current elevators count is:6
+create new Thread for elevator:6
+wait 1 second to accept new task
+set elevator:3 at 57 floor
+< elevator:3 at 57 floor,destination=99,flag=1,isalive=True > rearch  57 floor
+< elevator:3 at 57 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 58 floor
+< elevator:3 at 58 floor,destination=99,flag=1,isalive=True > rearch  58 floor
+< elevator:3 at 58 floor,destination=99,flag=1,isalive=True > dont need open the door 
+< elevator:4 at 1 floor,destination=None,flag=0,isalive=True > dont need open the door 
+set elevator:3 at 59 floor
+< elevator:3 at 59 floor,destination=99,flag=1,isalive=True > rearch  59 floor
+< elevator:3 at 59 floor,destination=99,flag=1,isalive=True > dont need open the door 
+< elevator:4 at 1 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!
+set elevator:3 at 60 floor
+< elevator:3 at 60 floor,destination=99,flag=1,isalive=True > rearch  60 floor
+< elevator:3 at 60 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 61 floor
+< elevator:3 at 61 floor,destination=99,flag=1,isalive=True > rearch  61 floor
+< elevator:3 at 61 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 62 floor
+< elevator:3 at 62 floor,destination=99,flag=1,isalive=True > rearch  62 floor
+< elevator:3 at 62 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 23 floor
+< elevator:2 at 23 floor,destination=78,flag=1,isalive=True > rearch  23 floor
+< elevator:2 at 23 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 63 floor
+< elevator:3 at 63 floor,destination=99,flag=1,isalive=True > rearch  63 floor
+< elevator:3 at 63 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 24 floor
+< elevator:2 at 24 floor,destination=78,flag=1,isalive=True > rearch  24 floor
+< elevator:2 at 24 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 64 floor
+< elevator:3 at 64 floor,destination=99,flag=1,isalive=True > rearch  64 floor
+< elevator:3 at 64 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 25 floor
+< elevator:2 at 25 floor,destination=78,flag=1,isalive=True > rearch  25 floor
+< elevator:2 at 25 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 65 floor
+< elevator:3 at 65 floor,destination=99,flag=1,isalive=True > rearch  65 floor
+< elevator:3 at 65 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 26 floor
+< elevator:2 at 26 floor,destination=78,flag=1,isalive=True > rearch  26 floor
+< elevator:2 at 26 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 66 floor
+< elevator:3 at 66 floor,destination=99,flag=1,isalive=True > rearch  66 floor
+< elevator:3 at 66 floor,destination=99,flag=1,isalive=True > dont need open the door 
+choice add localtask
+add localtask floor=69 to elevators[5],elevator name is:6
+< elevator:6 at 1 floor,destination=69,flag=1,isalive=True > accept the floor=69 you apply from localtask
+wait 1 second to accept new task
+set elevator:2 at 27 floor
+< elevator:2 at 27 floor,destination=78,flag=1,isalive=True > rearch  27 floor
+< elevator:2 at 27 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 67 floor
+< elevator:3 at 67 floor,destination=99,flag=1,isalive=True > rearch  67 floor
+< elevator:3 at 67 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 28 floor
+< elevator:2 at 28 floor,destination=78,flag=1,isalive=True > rearch  28 floor
+< elevator:2 at 28 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 68 floor
+< elevator:3 at 68 floor,destination=99,flag=1,isalive=True > rearch  68 floor
+< elevator:3 at 68 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 29 floor
+< elevator:2 at 29 floor,destination=78,flag=1,isalive=True > rearch  29 floor
+< elevator:2 at 29 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 69 floor
+< elevator:3 at 69 floor,destination=99,flag=1,isalive=True > rearch  69 floor
+< elevator:3 at 69 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 30 floor
+< elevator:2 at 30 floor,destination=78,flag=1,isalive=True > rearch  30 floor
+< elevator:2 at 30 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 70 floor
+< elevator:3 at 70 floor,destination=99,flag=1,isalive=True > rearch  70 floor
+< elevator:3 at 70 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 31 floor
+< elevator:2 at 31 floor,destination=78,flag=1,isalive=True > rearch  31 floor
+< elevator:2 at 31 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 71 floor
+< elevator:3 at 71 floor,destination=99,flag=1,isalive=True > rearch  71 floor
+< elevator:3 at 71 floor,destination=99,flag=1,isalive=True > dont need open the door 
+< elevator:1 at 75 floor,destination=None,flag=0,isalive=True > dont need open the door 
+set elevator:2 at 32 floor
+< elevator:2 at 32 floor,destination=78,flag=1,isalive=True > rearch  32 floor
+< elevator:2 at 32 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 72 floor
+< elevator:3 at 72 floor,destination=99,flag=1,isalive=True > rearch  72 floor
+< elevator:3 at 72 floor,destination=99,flag=1,isalive=True > dont need open the door 
+< elevator:1 at 75 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!
+set elevator:2 at 33 floor
+< elevator:2 at 33 floor,destination=78,flag=1,isalive=True > rearch  33 floor
+< elevator:2 at 33 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 73 floor
+< elevator:3 at 73 floor,destination=99,flag=1,isalive=True > rearch  73 floor
+< elevator:3 at 73 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 34 floor
+< elevator:2 at 34 floor,destination=78,flag=1,isalive=True > rearch  34 floor
+< elevator:2 at 34 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 74 floor
+< elevator:3 at 74 floor,destination=99,flag=1,isalive=True > rearch  74 floor
+< elevator:3 at 74 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 35 floor
+< elevator:2 at 35 floor,destination=78,flag=1,isalive=True > rearch  35 floor
+< elevator:2 at 35 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 75 floor
+< elevator:3 at 75 floor,destination=99,flag=1,isalive=True > rearch  75 floor
+< elevator:3 at 75 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 36 floor
+< elevator:2 at 36 floor,destination=78,flag=1,isalive=True > rearch  36 floor
+< elevator:2 at 36 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 76 floor
+< elevator:3 at 76 floor,destination=99,flag=1,isalive=True > rearch  76 floor
+< elevator:3 at 76 floor,destination=99,flag=1,isalive=True > dont need open the door 
+choice add new elevator
+elevators count reacher max count
+wait 1 second to accept new task
+set elevator:2 at 37 floor
+< elevator:2 at 37 floor,destination=78,flag=1,isalive=True > rearch  37 floor
+< elevator:2 at 37 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 77 floor
+< elevator:3 at 77 floor,destination=99,flag=1,isalive=True > rearch  77 floor
+< elevator:3 at 77 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 38 floor
+< elevator:2 at 38 floor,destination=78,flag=1,isalive=True > rearch  38 floor
+< elevator:2 at 38 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 78 floor
+< elevator:3 at 78 floor,destination=99,flag=1,isalive=True > rearch  78 floor
+< elevator:3 at 78 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 39 floor
+< elevator:2 at 39 floor,destination=78,flag=1,isalive=True > rearch  39 floor
+< elevator:2 at 39 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 79 floor
+< elevator:3 at 79 floor,destination=99,flag=1,isalive=True > rearch  79 floor
+< elevator:3 at 79 floor,destination=99,flag=1,isalive=True > dont need open the door 
+< elevator:4 at 1 floor,destination=None,flag=0,isalive=True > dont need open the door 
+set elevator:2 at 40 floor
+< elevator:2 at 40 floor,destination=78,flag=1,isalive=True > rearch  40 floor
+< elevator:2 at 40 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 80 floor
+< elevator:3 at 80 floor,destination=99,flag=1,isalive=True > rearch  80 floor
+< elevator:3 at 80 floor,destination=99,flag=1,isalive=True > dont need open the door 
+< elevator:4 at 1 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!
+set elevator:2 at 41 floor
+< elevator:2 at 41 floor,destination=78,flag=1,isalive=True > rearch  41 floor
+< elevator:2 at 41 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 81 floor
+< elevator:3 at 81 floor,destination=99,flag=1,isalive=True > rearch  81 floor
+< elevator:3 at 81 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 42 floor
+< elevator:2 at 42 floor,destination=78,flag=1,isalive=True > rearch  42 floor
+< elevator:2 at 42 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 82 floor
+< elevator:3 at 82 floor,destination=99,flag=1,isalive=True > rearch  82 floor
+< elevator:3 at 82 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 43 floor
+< elevator:2 at 43 floor,destination=78,flag=1,isalive=True > rearch  43 floor
+< elevator:2 at 43 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 83 floor
+< elevator:3 at 83 floor,destination=99,flag=1,isalive=True > rearch  83 floor
+< elevator:3 at 83 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 44 floor
+< elevator:2 at 44 floor,destination=78,flag=1,isalive=True > rearch  44 floor
+< elevator:2 at 44 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 84 floor
+< elevator:3 at 84 floor,destination=99,flag=1,isalive=True > rearch  84 floor
+< elevator:3 at 84 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 45 floor
+< elevator:2 at 45 floor,destination=78,flag=1,isalive=True > rearch  45 floor
+< elevator:2 at 45 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 85 floor
+< elevator:3 at 85 floor,destination=99,flag=1,isalive=True > rearch  85 floor
+< elevator:3 at 85 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 46 floor
+< elevator:2 at 46 floor,destination=78,flag=1,isalive=True > rearch  46 floor
+< elevator:2 at 46 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 86 floor
+< elevator:3 at 86 floor,destination=99,flag=1,isalive=True > rearch  86 floor
+< elevator:3 at 86 floor,destination=99,flag=1,isalive=True > dont need open the door 
+choice add localtask
+add localtask floor=9 to elevators[2],elevator name is:3
+< elevator:3 at 86 floor,destination=99,flag=1,isalive=True > cant accept the floor=9 you apply from localtask
+wait 1 second to accept new task
+set elevator:2 at 47 floor
+< elevator:2 at 47 floor,destination=78,flag=1,isalive=True > rearch  47 floor
+< elevator:2 at 47 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 87 floor
+< elevator:3 at 87 floor,destination=99,flag=1,isalive=True > rearch  87 floor
+< elevator:3 at 87 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 48 floor
+< elevator:2 at 48 floor,destination=78,flag=1,isalive=True > rearch  48 floor
+< elevator:2 at 48 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 88 floor
+< elevator:3 at 88 floor,destination=99,flag=1,isalive=True > rearch  88 floor
+< elevator:3 at 88 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 49 floor
+< elevator:2 at 49 floor,destination=78,flag=1,isalive=True > rearch  49 floor
+< elevator:2 at 49 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 89 floor
+< elevator:3 at 89 floor,destination=99,flag=1,isalive=True > rearch  89 floor
+< elevator:3 at 89 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 50 floor
+< elevator:2 at 50 floor,destination=78,flag=1,isalive=True > rearch  50 floor
+< elevator:2 at 50 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 90 floor
+< elevator:3 at 90 floor,destination=99,flag=1,isalive=True > rearch  90 floor
+< elevator:3 at 90 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 51 floor
+< elevator:2 at 51 floor,destination=78,flag=1,isalive=True > rearch  51 floor
+< elevator:2 at 51 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 91 floor
+< elevator:3 at 91 floor,destination=99,flag=1,isalive=True > rearch  91 floor
+< elevator:3 at 91 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 52 floor
+< elevator:2 at 52 floor,destination=78,flag=1,isalive=True > rearch  52 floor
+< elevator:2 at 52 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 92 floor
+< elevator:3 at 92 floor,destination=99,flag=1,isalive=True > rearch  92 floor
+< elevator:3 at 92 floor,destination=99,flag=1,isalive=True > dont need open the door 
+< elevator:1 at 75 floor,destination=None,flag=0,isalive=True > dont need open the door 
+set elevator:2 at 53 floor
+< elevator:2 at 53 floor,destination=78,flag=1,isalive=True > rearch  53 floor
+< elevator:2 at 53 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 93 floor
+< elevator:3 at 93 floor,destination=99,flag=1,isalive=True > rearch  93 floor
+< elevator:3 at 93 floor,destination=99,flag=1,isalive=True > dont need open the door 
+< elevator:1 at 75 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!
+set elevator:2 at 54 floor
+< elevator:2 at 54 floor,destination=78,flag=1,isalive=True > rearch  54 floor
+< elevator:2 at 54 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 94 floor
+< elevator:3 at 94 floor,destination=99,flag=1,isalive=True > rearch  94 floor
+< elevator:3 at 94 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 55 floor
+< elevator:2 at 55 floor,destination=78,flag=1,isalive=True > rearch  55 floor
+< elevator:2 at 55 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 95 floor
+< elevator:3 at 95 floor,destination=99,flag=1,isalive=True > rearch  95 floor
+< elevator:3 at 95 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 56 floor
+< elevator:2 at 56 floor,destination=78,flag=1,isalive=True > rearch  56 floor
+< elevator:2 at 56 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 96 floor
+< elevator:3 at 96 floor,destination=99,flag=1,isalive=True > rearch  96 floor
+< elevator:3 at 96 floor,destination=99,flag=1,isalive=True > dont need open the door 
+choice add localtask
+add localtask floor=90 to elevators[0],elevator name is:1
+< elevator:1 at 75 floor,destination=90,flag=1,isalive=True > accept the floor=90 you apply from localtask
+wait 1 second to accept new task
+set elevator:2 at 57 floor
+< elevator:2 at 57 floor,destination=78,flag=1,isalive=True > rearch  57 floor
+< elevator:2 at 57 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 97 floor
+< elevator:3 at 97 floor,destination=99,flag=1,isalive=True > rearch  97 floor
+< elevator:3 at 97 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 58 floor
+< elevator:2 at 58 floor,destination=78,flag=1,isalive=True > rearch  58 floor
+< elevator:2 at 58 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 98 floor
+< elevator:3 at 98 floor,destination=99,flag=1,isalive=True > rearch  98 floor
+< elevator:3 at 98 floor,destination=99,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 59 floor
+< elevator:2 at 59 floor,destination=78,flag=1,isalive=True > rearch  59 floor
+< elevator:2 at 59 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 99 floor
+< elevator:3 at 99 floor,destination=99,flag=1,isalive=True > rearch  99 floor
+open door for person who in < elevator:3 at 99 floor,destination=99,flag=1,isalive=True >,
+set elevator:2 at 60 floor
+< elevator:2 at 60 floor,destination=78,flag=1,isalive=True > rearch  60 floor
+< elevator:2 at 60 floor,destination=78,flag=1,isalive=True > dont need open the door 
+< elevator:4 at 1 floor,destination=None,flag=0,isalive=True > dont need open the door 
+set elevator:2 at 61 floor
+< elevator:2 at 61 floor,destination=78,flag=1,isalive=True > rearch  61 floor
+< elevator:2 at 61 floor,destination=78,flag=1,isalive=True > dont need open the door 
+< elevator:4 at 1 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!
+set elevator:2 at 62 floor
+< elevator:2 at 62 floor,destination=78,flag=1,isalive=True > rearch  62 floor
+< elevator:2 at 62 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 63 floor
+< elevator:2 at 63 floor,destination=78,flag=1,isalive=True > rearch  63 floor
+< elevator:2 at 63 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 64 floor
+< elevator:2 at 64 floor,destination=78,flag=1,isalive=True > rearch  64 floor
+< elevator:2 at 64 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 65 floor
+< elevator:2 at 65 floor,destination=78,flag=1,isalive=True > rearch  65 floor
+< elevator:2 at 65 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 66 floor
+< elevator:2 at 66 floor,destination=78,flag=1,isalive=True > rearch  66 floor
+< elevator:2 at 66 floor,destination=78,flag=1,isalive=True > dont need open the door 
+choice add new globaltask
+add flag=-1 ,floor=78 to globaltask
+someone wait down at 78 floor
+analyze the best blue print!
+GlobalTask.task["down"]=78 distancelist is [27, 12, 21, 77, 77, 77]
+< elevator:2 at 66 floor,destination=78,flag=1,isalive=True > accept the floor=78 you apply from globaltask
+< elevator:2 at 66 floor,destination=78,flag=1,isalive=True > accept globaltask flag=down,floor=78
+remove 78 from GlobalTask.task["down"]
+wait 1 second to accept new task
+set elevator:2 at 67 floor
+< elevator:2 at 67 floor,destination=78,flag=1,isalive=True > rearch  67 floor
+< elevator:2 at 67 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 68 floor
+< elevator:2 at 68 floor,destination=78,flag=1,isalive=True > rearch  68 floor
+< elevator:2 at 68 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 69 floor
+< elevator:2 at 69 floor,destination=78,flag=1,isalive=True > rearch  69 floor
+< elevator:2 at 69 floor,destination=78,flag=1,isalive=True > dont need open the door 
+< elevator:3 at 99 floor,destination=99,flag=1,isalive=True > reach destination:99,set flag=0
+< elevator:3 at 99 floor,destination=None,flag=0,isalive=True > dont need open the door 
+set elevator:2 at 70 floor
+< elevator:2 at 70 floor,destination=78,flag=1,isalive=True > rearch  70 floor
+< elevator:2 at 70 floor,destination=78,flag=1,isalive=True > dont need open the door 
+< elevator:3 at 99 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!
+set elevator:2 at 71 floor
+< elevator:2 at 71 floor,destination=78,flag=1,isalive=True > rearch  71 floor
+< elevator:2 at 71 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 72 floor
+< elevator:2 at 72 floor,destination=78,flag=1,isalive=True > rearch  72 floor
+< elevator:2 at 72 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 73 floor
+< elevator:2 at 73 floor,destination=78,flag=1,isalive=True > rearch  73 floor
+< elevator:2 at 73 floor,destination=78,flag=1,isalive=True > dont need open the door 
+< elevator:1 at 75 floor,destination=90,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 74 floor
+< elevator:2 at 74 floor,destination=78,flag=1,isalive=True > rearch  74 floor
+< elevator:2 at 74 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 76 floor
+< elevator:1 at 76 floor,destination=90,flag=1,isalive=True > rearch  76 floor
+< elevator:1 at 76 floor,destination=90,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 75 floor
+< elevator:2 at 75 floor,destination=78,flag=1,isalive=True > rearch  75 floor
+< elevator:2 at 75 floor,destination=78,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 77 floor
+< elevator:1 at 77 floor,destination=90,flag=1,isalive=True > rearch  77 floor
+< elevator:1 at 77 floor,destination=90,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 76 floor
+< elevator:2 at 76 floor,destination=78,flag=1,isalive=True > rearch  76 floor
+< elevator:2 at 76 floor,destination=78,flag=1,isalive=True > dont need open the door 
+--------------------------------
+--------------------------------
+current elevators count is : 6
+elevator:1 localtask is:set([90])
+elevator:1 is runing,current_floor is:77,destination is 90
+
+elevator:2 localtask is:set([78])
+elevator:2 is runing,current_floor is:76,destination is 78
+
+elevator:3 localtask is:set([])
+elevator:3 is empty, at 99 floor
+
+elevator:4 localtask is:set([])
+elevator:4 is empty, at 1 floor
+
+elevator:5 localtask is:set([])
+elevator:5 is empty, at 1 floor
+
+elevator:6 localtask is:set([69])
+elevator:6 is runing,current_floor is:1,destination is 69
+
+GlobalTask.task["down"] is set([])
+GlobalTask.task["up"] is set([])
+--------------------------------
+--------------------------------
+wait 10 second reflash  elevator status
+Thread-elevator-1 is runing
+Thread-elevator-2 is runing
+Thread-elevator-3 is runing
+Thread-elevator-4 is runing
+try start new elevator
+< elevator:5 at 1 floor,destination=None,flag=0,isalive=True > dont need open the door 
+ try start new elevator
+< elevator:6 at 1 floor,destination=69,flag=1,isalive=True > dont need open the door 
+choice add localtask
+add localtask floor=58 to elevators[5],elevator name is:6
+< elevator:6 at 1 floor,destination=69,flag=1,isalive=True > accept the floor=58 you apply from localtask
+wait 1 second to accept new task
+set elevator:1 at 78 floor
+< elevator:1 at 78 floor,destination=90,flag=1,isalive=True > rearch  78 floor
+< elevator:1 at 78 floor,destination=90,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 77 floor
+< elevator:2 at 77 floor,destination=78,flag=1,isalive=True > rearch  77 floor
+< elevator:2 at 77 floor,destination=78,flag=1,isalive=True > dont need open the door 
+< elevator:5 at 1 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!
+set elevator:6 at 2 floor
+< elevator:6 at 2 floor,destination=69,flag=1,isalive=True > rearch  2 floor
+< elevator:6 at 2 floor,destination=69,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 79 floor
+< elevator:1 at 79 floor,destination=90,flag=1,isalive=True > rearch  79 floor
+< elevator:1 at 79 floor,destination=90,flag=1,isalive=True > dont need open the door 
+set elevator:2 at 78 floor
+< elevator:2 at 78 floor,destination=78,flag=1,isalive=True > rearch  78 floor
+open door for person who in < elevator:2 at 78 floor,destination=78,flag=1,isalive=True >,
+set elevator:6 at 3 floor
+< elevator:6 at 3 floor,destination=69,flag=1,isalive=True > rearch  3 floor
+< elevator:6 at 3 floor,destination=69,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 80 floor
+< elevator:1 at 80 floor,destination=90,flag=1,isalive=True > rearch  80 floor
+< elevator:1 at 80 floor,destination=90,flag=1,isalive=True > dont need open the door 
+set elevator:6 at 4 floor
+< elevator:6 at 4 floor,destination=69,flag=1,isalive=True > rearch  4 floor
+< elevator:6 at 4 floor,destination=69,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 81 floor
+< elevator:1 at 81 floor,destination=90,flag=1,isalive=True > rearch  81 floor
+< elevator:1 at 81 floor,destination=90,flag=1,isalive=True > dont need open the door 
+set elevator:6 at 5 floor
+< elevator:6 at 5 floor,destination=69,flag=1,isalive=True > rearch  5 floor
+< elevator:6 at 5 floor,destination=69,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 82 floor
+< elevator:1 at 82 floor,destination=90,flag=1,isalive=True > rearch  82 floor
+< elevator:1 at 82 floor,destination=90,flag=1,isalive=True > dont need open the door 
+< elevator:4 at 1 floor,destination=None,flag=0,isalive=True > dont need open the door 
+set elevator:6 at 6 floor
+< elevator:6 at 6 floor,destination=69,flag=1,isalive=True > rearch  6 floor
+< elevator:6 at 6 floor,destination=69,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 83 floor
+< elevator:1 at 83 floor,destination=90,flag=1,isalive=True > rearch  83 floor
+< elevator:1 at 83 floor,destination=90,flag=1,isalive=True > dont need open the door 
+< elevator:4 at 1 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!
+set elevator:6 at 7 floor
+< elevator:6 at 7 floor,destination=69,flag=1,isalive=True > rearch  7 floor
+< elevator:6 at 7 floor,destination=69,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 84 floor
+< elevator:1 at 84 floor,destination=90,flag=1,isalive=True > rearch  84 floor
+< elevator:1 at 84 floor,destination=90,flag=1,isalive=True > dont need open the door 
+set elevator:6 at 8 floor
+< elevator:6 at 8 floor,destination=69,flag=1,isalive=True > rearch  8 floor
+< elevator:6 at 8 floor,destination=69,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 85 floor
+< elevator:1 at 85 floor,destination=90,flag=1,isalive=True > rearch  85 floor
+< elevator:1 at 85 floor,destination=90,flag=1,isalive=True > dont need open the door 
+set elevator:6 at 9 floor
+< elevator:6 at 9 floor,destination=69,flag=1,isalive=True > rearch  9 floor
+< elevator:6 at 9 floor,destination=69,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 86 floor
+< elevator:1 at 86 floor,destination=90,flag=1,isalive=True > rearch  86 floor
+< elevator:1 at 86 floor,destination=90,flag=1,isalive=True > dont need open the door 
+set elevator:6 at 10 floor
+< elevator:6 at 10 floor,destination=69,flag=1,isalive=True > rearch  10 floor
+< elevator:6 at 10 floor,destination=69,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 87 floor
+< elevator:1 at 87 floor,destination=90,flag=1,isalive=True > rearch  87 floor
+< elevator:1 at 87 floor,destination=90,flag=1,isalive=True > dont need open the door 
+set elevator:6 at 11 floor
+< elevator:6 at 11 floor,destination=69,flag=1,isalive=True > rearch  11 floor
+< elevator:6 at 11 floor,destination=69,flag=1,isalive=True > dont need open the door 
+choice add new globaltask
+add flag=-1 ,floor=-5 to globaltask
+someone wait down at -5 floor
+analyze the best blue print!
+GlobalTask.task["down"]=-5 distancelist is [98, 83, 104, 6, 6, 132]
+< elevator:4 at 1 floor,destination=-5,flag=-1,isalive=True > accept the floor=-5 you apply from globaltask
+< elevator:4 at 1 floor,destination=-5,flag=-1,isalive=True > accept globaltask flag=down,floor=-5
+remove -5 from GlobalTask.task["down"]
+wait 1 second to accept new task
+set elevator:1 at 88 floor
+< elevator:1 at 88 floor,destination=90,flag=1,isalive=True > rearch  88 floor
+< elevator:1 at 88 floor,destination=90,flag=1,isalive=True > dont need open the door 
+set elevator:6 at 12 floor
+< elevator:6 at 12 floor,destination=69,flag=1,isalive=True > rearch  12 floor
+< elevator:6 at 12 floor,destination=69,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 89 floor
+< elevator:1 at 89 floor,destination=90,flag=1,isalive=True > rearch  89 floor
+< elevator:1 at 89 floor,destination=90,flag=1,isalive=True > dont need open the door 
+< elevator:2 at 78 floor,destination=78,flag=1,isalive=True > reach destination:78,set flag=0
+< elevator:2 at 78 floor,destination=None,flag=0,isalive=True > dont need open the door 
+set elevator:6 at 13 floor
+< elevator:6 at 13 floor,destination=69,flag=1,isalive=True > rearch  13 floor
+< elevator:6 at 13 floor,destination=69,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 90 floor
+< elevator:1 at 90 floor,destination=90,flag=1,isalive=True > rearch  90 floor
+open door for person who in < elevator:1 at 90 floor,destination=90,flag=1,isalive=True >,
+< elevator:2 at 78 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!
+set elevator:6 at 14 floor
+< elevator:6 at 14 floor,destination=69,flag=1,isalive=True > rearch  14 floor
+< elevator:6 at 14 floor,destination=69,flag=1,isalive=True > dont need open the door 
+< elevator:3 at 99 floor,destination=None,flag=0,isalive=True > dont need open the door 
+set elevator:6 at 15 floor
+< elevator:6 at 15 floor,destination=69,flag=1,isalive=True > rearch  15 floor
+< elevator:6 at 15 floor,destination=69,flag=1,isalive=True > dont need open the door 
+< elevator:3 at 99 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!
+set elevator:6 at 16 floor
+< elevator:6 at 16 floor,destination=69,flag=1,isalive=True > rearch  16 floor
+< elevator:6 at 16 floor,destination=69,flag=1,isalive=True > dont need open the door 
+set elevator:6 at 17 floor
+< elevator:6 at 17 floor,destination=69,flag=1,isalive=True > rearch  17 floor
+< elevator:6 at 17 floor,destination=69,flag=1,isalive=True > dont need open the door 
+set elevator:6 at 18 floor
+< elevator:6 at 18 floor,destination=69,flag=1,isalive=True > rearch  18 floor
+< elevator:6 at 18 floor,destination=69,flag=1,isalive=True > dont need open the door 
+set elevator:6 at 19 floor
+< elevator:6 at 19 floor,destination=69,flag=1,isalive=True > rearch  19 floor
+< elevator:6 at 19 floor,destination=69,flag=1,isalive=True > dont need open the door 
+set elevator:6 at 20 floor
+< elevator:6 at 20 floor,destination=69,flag=1,isalive=True > rearch  20 floor
+< elevator:6 at 20 floor,destination=69,flag=1,isalive=True > dont need open the door 
+choice add localtask
+add localtask floor=42 to elevators[2],elevator name is:3
+< elevator:3 at 99 floor,destination=42,flag=-1,isalive=True > accept the floor=42 you apply from localtask
+wait 1 second to accept new task
+set elevator:6 at 21 floor
+< elevator:6 at 21 floor,destination=69,flag=1,isalive=True > rearch  21 floor
+< elevator:6 at 21 floor,destination=69,flag=1,isalive=True > dont need open the door 
+< elevator:5 at 1 floor,destination=None,flag=0,isalive=True > dont need open the door 
+set elevator:6 at 22 floor
+< elevator:6 at 22 floor,destination=69,flag=1,isalive=True > rearch  22 floor
+< elevator:6 at 22 floor,destination=69,flag=1,isalive=True > dont need open the door 
+< elevator:5 at 1 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!
+set elevator:6 at 23 floor
+< elevator:6 at 23 floor,destination=69,flag=1,isalive=True > rearch  23 floor
+< elevator:6 at 23 floor,destination=69,flag=1,isalive=True > dont need open the door 
+< elevator:1 at 90 floor,destination=90,flag=1,isalive=True > reach destination:90,set flag=0
+< elevator:1 at 90 floor,destination=None,flag=0,isalive=True > dont need open the door 
+set elevator:6 at 24 floor
+< elevator:6 at 24 floor,destination=69,flag=1,isalive=True > rearch  24 floor
+< elevator:6 at 24 floor,destination=69,flag=1,isalive=True > dont need open the door 
+< elevator:1 at 90 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!
+set elevator:6 at 25 floor
+< elevator:6 at 25 floor,destination=69,flag=1,isalive=True > rearch  25 floor
+< elevator:6 at 25 floor,destination=69,flag=1,isalive=True > dont need open the door 
+set elevator:6 at 26 floor
+< elevator:6 at 26 floor,destination=69,flag=1,isalive=True > rearch  26 floor
+< elevator:6 at 26 floor,destination=69,flag=1,isalive=True > dont need open the door 
+< elevator:4 at 1 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:6 at 27 floor
+< elevator:6 at 27 floor,destination=69,flag=1,isalive=True > rearch  27 floor
+< elevator:6 at 27 floor,destination=69,flag=1,isalive=True > dont need open the door 
+set elevator:4 at 0 floor
+< elevator:4 at 0 floor,destination=-5,flag=-1,isalive=True > rearch  0 floor
+< elevator:4 at 0 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:6 at 28 floor
+< elevator:6 at 28 floor,destination=69,flag=1,isalive=True > rearch  28 floor
+< elevator:6 at 28 floor,destination=69,flag=1,isalive=True > dont need open the door 
+set elevator:4 at -1 floor
+< elevator:4 at -1 floor,destination=-5,flag=-1,isalive=True > rearch  -1 floor
+< elevator:4 at -1 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:6 at 29 floor
+< elevator:6 at 29 floor,destination=69,flag=1,isalive=True > rearch  29 floor
+< elevator:6 at 29 floor,destination=69,flag=1,isalive=True > dont need open the door 
+set elevator:4 at -2 floor
+< elevator:4 at -2 floor,destination=-5,flag=-1,isalive=True > rearch  -2 floor
+< elevator:4 at -2 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:6 at 30 floor
+< elevator:6 at 30 floor,destination=69,flag=1,isalive=True > rearch  30 floor
+< elevator:6 at 30 floor,destination=69,flag=1,isalive=True > dont need open the door 
+set elevator:4 at -3 floor
+< elevator:4 at -3 floor,destination=-5,flag=-1,isalive=True > rearch  -3 floor
+< elevator:4 at -3 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+choice add localtask
+add localtask floor=35 to elevators[2],elevator name is:3
+< elevator:3 at 99 floor,destination=35,flag=-1,isalive=True > accept the floor=35 you apply from localtask
+wait 1 second to accept new task
+set elevator:6 at 31 floor
+< elevator:6 at 31 floor,destination=69,flag=1,isalive=True > rearch  31 floor
+< elevator:6 at 31 floor,destination=69,flag=1,isalive=True > dont need open the door 
+set elevator:4 at -4 floor
+< elevator:4 at -4 floor,destination=-5,flag=-1,isalive=True > rearch  -4 floor
+< elevator:4 at -4 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:6 at 32 floor
+< elevator:6 at 32 floor,destination=69,flag=1,isalive=True > rearch  32 floor
+< elevator:6 at 32 floor,destination=69,flag=1,isalive=True > dont need open the door 
+set elevator:4 at -5 floor
+< elevator:4 at -5 floor,destination=-5,flag=-1,isalive=True > rearch  -5 floor
+open door for person who in < elevator:4 at -5 floor,destination=-5,flag=-1,isalive=True >,
+set elevator:6 at 33 floor
+< elevator:6 at 33 floor,destination=69,flag=1,isalive=True > rearch  33 floor
+< elevator:6 at 33 floor,destination=69,flag=1,isalive=True > dont need open the door 
+< elevator:2 at 78 floor,destination=None,flag=0,isalive=True > dont need open the door 
+set elevator:6 at 34 floor
+< elevator:6 at 34 floor,destination=69,flag=1,isalive=True > rearch  34 floor
+< elevator:6 at 34 floor,destination=69,flag=1,isalive=True > dont need open the door 
+< elevator:2 at 78 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!
+set elevator:6 at 35 floor
+< elevator:6 at 35 floor,destination=69,flag=1,isalive=True > rearch  35 floor
+< elevator:6 at 35 floor,destination=69,flag=1,isalive=True > dont need open the door 
+< elevator:3 at 99 floor,destination=35,flag=-1,isalive=True > dont need open the door 
+set elevator:6 at 36 floor
+< elevator:6 at 36 floor,destination=69,flag=1,isalive=True > rearch  36 floor
+< elevator:6 at 36 floor,destination=69,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 98 floor
+< elevator:3 at 98 floor,destination=35,flag=-1,isalive=True > rearch  98 floor
+< elevator:3 at 98 floor,destination=35,flag=-1,isalive=True > dont need open the door 
+set elevator:6 at 37 floor
+< elevator:6 at 37 floor,destination=69,flag=1,isalive=True > rearch  37 floor
+< elevator:6 at 37 floor,destination=69,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 97 floor
+< elevator:3 at 97 floor,destination=35,flag=-1,isalive=True > rearch  97 floor
+< elevator:3 at 97 floor,destination=35,flag=-1,isalive=True > dont need open the door 
+set elevator:6 at 38 floor
+< elevator:6 at 38 floor,destination=69,flag=1,isalive=True > rearch  38 floor
+< elevator:6 at 38 floor,destination=69,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 96 floor
+< elevator:3 at 96 floor,destination=35,flag=-1,isalive=True > rearch  96 floor
+< elevator:3 at 96 floor,destination=35,flag=-1,isalive=True > dont need open the door 
+set elevator:6 at 39 floor
+< elevator:6 at 39 floor,destination=69,flag=1,isalive=True > rearch  39 floor
+< elevator:6 at 39 floor,destination=69,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 95 floor
+< elevator:3 at 95 floor,destination=35,flag=-1,isalive=True > rearch  95 floor
+< elevator:3 at 95 floor,destination=35,flag=-1,isalive=True > dont need open the door 
+set elevator:6 at 40 floor
+< elevator:6 at 40 floor,destination=69,flag=1,isalive=True > rearch  40 floor
+< elevator:6 at 40 floor,destination=69,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 94 floor
+< elevator:3 at 94 floor,destination=35,flag=-1,isalive=True > rearch  94 floor
+< elevator:3 at 94 floor,destination=35,flag=-1,isalive=True > dont need open the door 
+choice add localtask
+add localtask floor=56 to elevators[4],elevator name is:5
+< elevator:5 at 1 floor,destination=56,flag=1,isalive=True > accept the floor=56 you apply from localtask
+wait 1 second to accept new task
+set elevator:6 at 41 floor
+< elevator:6 at 41 floor,destination=69,flag=1,isalive=True > rearch  41 floor
+< elevator:6 at 41 floor,destination=69,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 93 floor
+< elevator:3 at 93 floor,destination=35,flag=-1,isalive=True > rearch  93 floor
+< elevator:3 at 93 floor,destination=35,flag=-1,isalive=True > dont need open the door 
+set elevator:6 at 42 floor
+< elevator:6 at 42 floor,destination=69,flag=1,isalive=True > rearch  42 floor
+< elevator:6 at 42 floor,destination=69,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 92 floor
+ < elevator:3 at 92 floor,destination=35,flag=-1,isalive=True > rearch  92 floor< elevator:4 at -5 floor,destination=-5,flag=-1,isalive=True > reach destination:-5,set flag=0
+
+< elevator:3 at 92 floor,destination=35,flag=-1,isalive=True > dont need open the door < elevator:4 at -5 floor,destination=None,flag=0,isalive=True > dont need open the door 
+
+< elevator:5 at 1 floor,destination=56,flag=1,isalive=True > dont need open the door 
+set elevator:6 at 43 floor
+< elevator:6 at 43 floor,destination=69,flag=1,isalive=True > rearch  43 floor
+< elevator:6 at 43 floor,destination=69,flag=1,isalive=True > dont need open the door 
+< elevator:4 at -5 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!set elevator:3 at 91 floorset elevator:5 at 2 floor
+
+
+< elevator:3 at 91 floor,destination=35,flag=-1,isalive=True > rearch  91 floor< elevator:5 at 2 floor,destination=56,flag=1,isalive=True > rearch  2 floor
+
+< elevator:5 at 2 floor,destination=56,flag=1,isalive=True > dont need open the door < elevator:3 at 91 floor,destination=35,flag=-1,isalive=True > dont need open the door 
+
+set elevator:6 at 44 floor
+< elevator:6 at 44 floor,destination=69,flag=1,isalive=True > rearch  44 floor
+< elevator:6 at 44 floor,destination=69,flag=1,isalive=True > dont need open the door 
+< elevator:1 at 90 floor,destination=None,flag=0,isalive=True > dont need open the door 
+set elevator:3 at 90 floorset elevator:5 at 3 floor
+
+< elevator:5 at 3 floor,destination=56,flag=1,isalive=True > rearch  3 floor< elevator:3 at 90 floor,destination=35,flag=-1,isalive=True > rearch  90 floor
+
+< elevator:5 at 3 floor,destination=56,flag=1,isalive=True > dont need open the door < elevator:3 at 90 floor,destination=35,flag=-1,isalive=True > dont need open the door 
+
+set elevator:6 at 45 floor
+< elevator:6 at 45 floor,destination=69,flag=1,isalive=True > rearch  45 floor
+< elevator:6 at 45 floor,destination=69,flag=1,isalive=True > dont need open the door 
+< elevator:1 at 90 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!
+set elevator:3 at 89 floor
+< elevator:3 at 89 floor,destination=35,flag=-1,isalive=True > rearch  89 floor
+< elevator:3 at 89 floor,destination=35,flag=-1,isalive=True > dont need open the door set elevator:5 at 4 floor
+
+< elevator:5 at 4 floor,destination=56,flag=1,isalive=True > rearch  4 floor
+< elevator:5 at 4 floor,destination=56,flag=1,isalive=True > dont need open the door 
+set elevator:6 at 46 floor
+< elevator:6 at 46 floor,destination=69,flag=1,isalive=True > rearch  46 floor
+< elevator:6 at 46 floor,destination=69,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 88 floorset elevator:5 at 5 floor
+
+< elevator:3 at 88 floor,destination=35,flag=-1,isalive=True > rearch  88 floor< elevator:5 at 5 floor,destination=56,flag=1,isalive=True > rearch  5 floor
+
+< elevator:5 at 5 floor,destination=56,flag=1,isalive=True > dont need open the door 
+< elevator:3 at 88 floor,destination=35,flag=-1,isalive=True > dont need open the door 
+set elevator:6 at 47 floor
+< elevator:6 at 47 floor,destination=69,flag=1,isalive=True > rearch  47 floor
+< elevator:6 at 47 floor,destination=69,flag=1,isalive=True > dont need open the door 
+set elevator:5 at 6 floor
+< elevator:5 at 6 floor,destination=56,flag=1,isalive=True > rearch  6 floor
+< elevator:5 at 6 floor,destination=56,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 87 floor
+< elevator:3 at 87 floor,destination=35,flag=-1,isalive=True > rearch  87 floor
+< elevator:3 at 87 floor,destination=35,flag=-1,isalive=True > dont need open the door 
+set elevator:6 at 48 floor
+< elevator:6 at 48 floor,destination=69,flag=1,isalive=True > rearch  48 floor
+< elevator:6 at 48 floor,destination=69,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 86 floorset elevator:5 at 7 floor
+
+< elevator:3 at 86 floor,destination=35,flag=-1,isalive=True > rearch  86 floor
+ < elevator:3 at 86 floor,destination=35,flag=-1,isalive=True > dont need open the door < elevator:5 at 7 floor,destination=56,flag=1,isalive=True > rearch  7 floor
+
+< elevator:5 at 7 floor,destination=56,flag=1,isalive=True > dont need open the door 
+set elevator:6 at 49 floor
+< elevator:6 at 49 floor,destination=69,flag=1,isalive=True > rearch  49 floor
+< elevator:6 at 49 floor,destination=69,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 85 floor
+< elevator:3 at 85 floor,destination=35,flag=-1,isalive=True > rearch  85 floor
+< elevator:3 at 85 floor,destination=35,flag=-1,isalive=True > dont need open the door 
+set elevator:5 at 8 floor
+< elevator:5 at 8 floor,destination=56,flag=1,isalive=True > rearch  8 floor
+< elevator:5 at 8 floor,destination=56,flag=1,isalive=True > dont need open the door 
+set elevator:6 at 50 floor
+< elevator:6 at 50 floor,destination=69,flag=1,isalive=True > rearch  50 floor
+< elevator:6 at 50 floor,destination=69,flag=1,isalive=True > dont need open the door 
+choice add localtask
+add localtask floor=-5 to elevators[2],elevator name is:3
+< elevator:3 at 85 floor,destination=-5,flag=-1,isalive=True > accept the floor=-5 you apply from localtask
+wait 1 second to accept new task
+set elevator:3 at 84 floor
+< elevator:3 at 84 floor,destination=-5,flag=-1,isalive=True > rearch  84 floorset elevator:5 at 9 floor
+
+< elevator:3 at 84 floor,destination=-5,flag=-1,isalive=True > dont need open the door < elevator:5 at 9 floor,destination=56,flag=1,isalive=True > rearch  9 floor
+
+< elevator:5 at 9 floor,destination=56,flag=1,isalive=True > dont need open the door 
+set elevator:6 at 51 floor
+< elevator:6 at 51 floor,destination=69,flag=1,isalive=True > rearch  51 floor
+< elevator:6 at 51 floor,destination=69,flag=1,isalive=True > dont need open the door 
+set elevator:5 at 10 floorset elevator:3 at 83 floor
+
+< elevator:5 at 10 floor,destination=56,flag=1,isalive=True > rearch  10 floor< elevator:3 at 83 floor,destination=-5,flag=-1,isalive=True > rearch  83 floor
+
+< elevator:3 at 83 floor,destination=-5,flag=-1,isalive=True > dont need open the door < elevator:5 at 10 floor,destination=56,flag=1,isalive=True > dont need open the door 
+
+set elevator:6 at 52 floor
+< elevator:6 at 52 floor,destination=69,flag=1,isalive=True > rearch  52 floor
+< elevator:6 at 52 floor,destination=69,flag=1,isalive=True > dont need open the door 
+set elevator:5 at 11 floorset elevator:3 at 82 floor
+
+< elevator:5 at 11 floor,destination=56,flag=1,isalive=True > rearch  11 floor< elevator:3 at 82 floor,destination=-5,flag=-1,isalive=True > rearch  82 floor
+
+< elevator:5 at 11 floor,destination=56,flag=1,isalive=True > dont need open the door 
+< elevator:3 at 82 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:6 at 53 floor
+< elevator:6 at 53 floor,destination=69,flag=1,isalive=True > rearch  53 floor
+< elevator:6 at 53 floor,destination=69,flag=1,isalive=True > dont need open the door 
+set elevator:5 at 12 floorset elevator:3 at 81 floor
+
+< elevator:5 at 12 floor,destination=56,flag=1,isalive=True > rearch  12 floor
+ < elevator:5 at 12 floor,destination=56,flag=1,isalive=True > dont need open the door < elevator:3 at 81 floor,destination=-5,flag=-1,isalive=True > rearch  81 floorset elevator:6 at 54 floor
+
+
+< elevator:3 at 81 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+ < elevator:6 at 54 floor,destination=69,flag=1,isalive=True > rearch  54 floor
+< elevator:6 at 54 floor,destination=69,flag=1,isalive=True > dont need open the door 
+< elevator:2 at 78 floor,destination=None,flag=0,isalive=True > dont need open the door 
+set elevator:5 at 13 floor
+< elevator:5 at 13 floor,destination=56,flag=1,isalive=True > rearch  13 floor
+< elevator:5 at 13 floor,destination=56,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 80 floor
+< elevator:3 at 80 floor,destination=-5,flag=-1,isalive=True > rearch  80 floor
+< elevator:3 at 80 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:6 at 55 floor
+< elevator:6 at 55 floor,destination=69,flag=1,isalive=True > rearch  55 floor
+< elevator:6 at 55 floor,destination=69,flag=1,isalive=True > dont need open the door 
+< elevator:2 at 78 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!
+set elevator:5 at 14 floorset elevator:3 at 79 floor
+
+< elevator:5 at 14 floor,destination=56,flag=1,isalive=True > rearch  14 floor< elevator:3 at 79 floor,destination=-5,flag=-1,isalive=True > rearch  79 floor
+
+< elevator:3 at 79 floor,destination=-5,flag=-1,isalive=True > dont need open the door < elevator:5 at 14 floor,destination=56,flag=1,isalive=True > dont need open the door 
+
+ set elevator:6 at 56 floor
+< elevator:6 at 56 floor,destination=69,flag=1,isalive=True > rearch  56 floor
+< elevator:6 at 56 floor,destination=69,flag=1,isalive=True > dont need open the door 
+set elevator:5 at 15 floor set elevator:6 at 57 floor
+
+ < elevator:5 at 15 floor,destination=56,flag=1,isalive=True > rearch  15 floorset elevator:3 at 78 floor< elevator:6 at 57 floor,destination=69,flag=1,isalive=True > rearch  57 floor
+
+
+< elevator:5 at 15 floor,destination=56,flag=1,isalive=True > dont need open the door < elevator:3 at 78 floor,destination=-5,flag=-1,isalive=True > rearch  78 floor< elevator:6 at 57 floor,destination=69,flag=1,isalive=True > dont need open the door 
+
+
+< elevator:3 at 78 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:5 at 16 floorset elevator:3 at 77 floor
+
+ < elevator:5 at 16 floor,destination=56,flag=1,isalive=True > rearch  16 floor< elevator:3 at 77 floor,destination=-5,flag=-1,isalive=True > rearch  77 floorset elevator:6 at 58 floor
+
+
+< elevator:5 at 16 floor,destination=56,flag=1,isalive=True > dont need open the door < elevator:3 at 77 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+
+ < elevator:6 at 58 floor,destination=69,flag=1,isalive=True > rearch  58 floor
+open door for person who in < elevator:6 at 58 floor,destination=69,flag=1,isalive=True >,
+set elevator:5 at 17 floor
+ < elevator:5 at 17 floor,destination=56,flag=1,isalive=True > rearch  17 floorset elevator:3 at 76 floor
+
+< elevator:5 at 17 floor,destination=56,flag=1,isalive=True > dont need open the door < elevator:3 at 76 floor,destination=-5,flag=-1,isalive=True > rearch  76 floor
+
+< elevator:3 at 76 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:5 at 18 floorset elevator:3 at 75 floor
+
+< elevator:5 at 18 floor,destination=56,flag=1,isalive=True > rearch  18 floor< elevator:3 at 75 floor,destination=-5,flag=-1,isalive=True > rearch  75 floor
+
+< elevator:3 at 75 floor,destination=-5,flag=-1,isalive=True > dont need open the door < elevator:5 at 18 floor,destination=56,flag=1,isalive=True > dont need open the door 
+
+choice add localtask
+add localtask floor=85 to elevators[5],elevator name is:6
+< elevator:6 at 58 floor,destination=85,flag=1,isalive=True > accept the floor=85 you apply from localtask
+wait 1 second to accept new task
+set elevator:5 at 19 floor
+< elevator:5 at 19 floor,destination=56,flag=1,isalive=True > rearch  19 floor
+< elevator:5 at 19 floor,destination=56,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 74 floor
+< elevator:3 at 74 floor,destination=-5,flag=-1,isalive=True > rearch  74 floor
+< elevator:3 at 74 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:3 at 73 floorset elevator:5 at 20 floor
+
+< elevator:3 at 73 floor,destination=-5,flag=-1,isalive=True > rearch  73 floor< elevator:5 at 20 floor,destination=56,flag=1,isalive=True > rearch  20 floor
+
+< elevator:5 at 20 floor,destination=56,flag=1,isalive=True > dont need open the door < elevator:3 at 73 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+
+set elevator:3 at 72 floorset elevator:5 at 21 floor
+
+< elevator:5 at 21 floor,destination=56,flag=1,isalive=True > rearch  21 floor< elevator:3 at 72 floor,destination=-5,flag=-1,isalive=True > rearch  72 floor
+
+< elevator:5 at 21 floor,destination=56,flag=1,isalive=True > dont need open the door < elevator:3 at 72 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+
+< elevator:4 at -5 floor,destination=None,flag=0,isalive=True > dont need open the door 
+set elevator:5 at 22 floor
+< elevator:5 at 22 floor,destination=56,flag=1,isalive=True > rearch  22 floor
+< elevator:5 at 22 floor,destination=56,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 71 floor
+< elevator:3 at 71 floor,destination=-5,flag=-1,isalive=True > rearch  71 floor
+< elevator:3 at 71 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+< elevator:4 at -5 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!
+< elevator:1 at 90 floor,destination=None,flag=0,isalive=True > dont need open the door 
+set elevator:5 at 23 floor
+set elevator:3 at 70 floor< elevator:5 at 23 floor,destination=56,flag=1,isalive=True > rearch  23 floor
+
+< elevator:3 at 70 floor,destination=-5,flag=-1,isalive=True > rearch  70 floor
+ < elevator:3 at 70 floor,destination=-5,flag=-1,isalive=True > dont need open the door < elevator:5 at 23 floor,destination=56,flag=1,isalive=True > dont need open the door 
+
+< elevator:1 at 90 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!
+set elevator:5 at 24 floor
+< elevator:5 at 24 floor,destination=56,flag=1,isalive=True > rearch  24 floor
+< elevator:5 at 24 floor,destination=56,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 69 floor
+< elevator:3 at 69 floor,destination=-5,flag=-1,isalive=True > rearch  69 floor
+< elevator:3 at 69 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:5 at 25 floor
+< elevator:5 at 25 floor,destination=56,flag=1,isalive=True > rearch  25 floor
+< elevator:5 at 25 floor,destination=56,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 68 floor
+< elevator:3 at 68 floor,destination=-5,flag=-1,isalive=True > rearch  68 floor
+< elevator:3 at 68 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:6 at 59 floor
+< elevator:6 at 59 floor,destination=85,flag=1,isalive=True > rearch  59 floor
+< elevator:6 at 59 floor,destination=85,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 67 floor
+< elevator:3 at 67 floor,destination=-5,flag=-1,isalive=True > rearch  67 floor
+< elevator:3 at 67 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:5 at 26 floor
+< elevator:5 at 26 floor,destination=56,flag=1,isalive=True > rearch  26 floor
+< elevator:5 at 26 floor,destination=56,flag=1,isalive=True > dont need open the door 
+set elevator:6 at 60 floor
+< elevator:6 at 60 floor,destination=85,flag=1,isalive=True > rearch  60 floor
+< elevator:6 at 60 floor,destination=85,flag=1,isalive=True > dont need open the door 
+set elevator:5 at 27 floorset elevator:3 at 66 floor
+
+< elevator:3 at 66 floor,destination=-5,flag=-1,isalive=True > rearch  66 floor< elevator:5 at 27 floor,destination=56,flag=1,isalive=True > rearch  27 floor
+
+< elevator:3 at 66 floor,destination=-5,flag=-1,isalive=True > dont need open the door < elevator:5 at 27 floor,destination=56,flag=1,isalive=True > dont need open the door 
+
+set elevator:6 at 61 floor
+< elevator:6 at 61 floor,destination=85,flag=1,isalive=True > rearch  61 floor
+< elevator:6 at 61 floor,destination=85,flag=1,isalive=True > dont need open the door 
+set elevator:5 at 28 floor
+< elevator:5 at 28 floor,destination=56,flag=1,isalive=True > rearch  28 floor
+< elevator:5 at 28 floor,destination=56,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 65 floor
+< elevator:3 at 65 floor,destination=-5,flag=-1,isalive=True > rearch  65 floor
+< elevator:3 at 65 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+choice restart closed elevator
+try restart all stop elevator
+wait 1 second to accept new task
+set elevator:6 at 62 floor
+< elevator:6 at 62 floor,destination=85,flag=1,isalive=True > rearch  62 floor
+< elevator:6 at 62 floor,destination=85,flag=1,isalive=True > dont need open the door 
+set elevator:5 at 29 floor
+< elevator:5 at 29 floor,destination=56,flag=1,isalive=True > rearch  29 floor
+< elevator:5 at 29 floor,destination=56,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 64 floor
+< elevator:3 at 64 floor,destination=-5,flag=-1,isalive=True > rearch  64 floor
+< elevator:3 at 64 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:6 at 63 floor
+< elevator:6 at 63 floor,destination=85,flag=1,isalive=True > rearch  63 floor
+< elevator:6 at 63 floor,destination=85,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 63 floorset elevator:5 at 30 floor
+
+< elevator:5 at 30 floor,destination=56,flag=1,isalive=True > rearch  30 floor< elevator:3 at 63 floor,destination=-5,flag=-1,isalive=True > rearch  63 floor
+
+< elevator:5 at 30 floor,destination=56,flag=1,isalive=True > dont need open the door < elevator:3 at 63 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+
+set elevator:6 at 64 floor
+< elevator:6 at 64 floor,destination=85,flag=1,isalive=True > rearch  64 floor
+< elevator:6 at 64 floor,destination=85,flag=1,isalive=True > dont need open the door 
+set elevator:5 at 31 floor
+< elevator:5 at 31 floor,destination=56,flag=1,isalive=True > rearch  31 floor
+< elevator:5 at 31 floor,destination=56,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 62 floor
+< elevator:3 at 62 floor,destination=-5,flag=-1,isalive=True > rearch  62 floor
+< elevator:3 at 62 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:6 at 65 floor
+< elevator:6 at 65 floor,destination=85,flag=1,isalive=True > rearch  65 floor
+< elevator:6 at 65 floor,destination=85,flag=1,isalive=True > dont need open the door 
+set elevator:5 at 32 floor
+< elevator:5 at 32 floor,destination=56,flag=1,isalive=True > rearch  32 floor
+< elevator:5 at 32 floor,destination=56,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 61 floor
+< elevator:3 at 61 floor,destination=-5,flag=-1,isalive=True > rearch  61 floor
+< elevator:3 at 61 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:6 at 66 floor
+< elevator:6 at 66 floor,destination=85,flag=1,isalive=True > rearch  66 floor
+< elevator:6 at 66 floor,destination=85,flag=1,isalive=True > dont need open the door 
+< elevator:2 at 78 floor,destination=None,flag=0,isalive=True > dont need open the door 
+set elevator:3 at 60 floor
+< elevator:3 at 60 floor,destination=-5,flag=-1,isalive=True > rearch  60 floor
+< elevator:3 at 60 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:5 at 33 floor
+< elevator:5 at 33 floor,destination=56,flag=1,isalive=True > rearch  33 floor
+< elevator:5 at 33 floor,destination=56,flag=1,isalive=True > dont need open the door 
+set elevator:6 at 67 floor
+< elevator:6 at 67 floor,destination=85,flag=1,isalive=True > rearch  67 floor
+< elevator:6 at 67 floor,destination=85,flag=1,isalive=True > dont need open the door 
+< elevator:2 at 78 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!
+set elevator:5 at 34 floor
+< elevator:5 at 34 floor,destination=56,flag=1,isalive=True > rearch  34 floor
+< elevator:5 at 34 floor,destination=56,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 59 floor
+< elevator:3 at 59 floor,destination=-5,flag=-1,isalive=True > rearch  59 floor
+< elevator:3 at 59 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:6 at 68 floor
+< elevator:6 at 68 floor,destination=85,flag=1,isalive=True > rearch  68 floor
+< elevator:6 at 68 floor,destination=85,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 58 floor
+< elevator:3 at 58 floor,destination=-5,flag=-1,isalive=True > rearch  58 floor
+< elevator:3 at 58 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:5 at 35 floor
+< elevator:5 at 35 floor,destination=56,flag=1,isalive=True > rearch  35 floor
+< elevator:5 at 35 floor,destination=56,flag=1,isalive=True > dont need open the door 
+set elevator:6 at 69 floor
+< elevator:6 at 69 floor,destination=85,flag=1,isalive=True > rearch  69 floor
+open door for person who in < elevator:6 at 69 floor,destination=85,flag=1,isalive=True >,
+set elevator:5 at 36 floor
+< elevator:5 at 36 floor,destination=56,flag=1,isalive=True > rearch  36 floor
+< elevator:5 at 36 floor,destination=56,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 57 floor
+< elevator:3 at 57 floor,destination=-5,flag=-1,isalive=True > rearch  57 floor
+< elevator:3 at 57 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:5 at 37 floor
+< elevator:5 at 37 floor,destination=56,flag=1,isalive=True > rearch  37 floor
+< elevator:5 at 37 floor,destination=56,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 56 floor
+< elevator:3 at 56 floor,destination=-5,flag=-1,isalive=True > rearch  56 floor
+< elevator:3 at 56 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:3 at 55 floor
+< elevator:3 at 55 floor,destination=-5,flag=-1,isalive=True > rearch  55 floor
+< elevator:3 at 55 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:5 at 38 floor
+< elevator:5 at 38 floor,destination=56,flag=1,isalive=True > rearch  38 floor
+< elevator:5 at 38 floor,destination=56,flag=1,isalive=True > dont need open the door 
+choice add new elevator
+elevators count reacher max count
+wait 1 second to accept new task
+set elevator:3 at 54 floorset elevator:5 at 39 floor
+
+< elevator:5 at 39 floor,destination=56,flag=1,isalive=True > rearch  39 floor< elevator:3 at 54 floor,destination=-5,flag=-1,isalive=True > rearch  54 floor
+
+< elevator:5 at 39 floor,destination=56,flag=1,isalive=True > dont need open the door < elevator:3 at 54 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+
+set elevator:5 at 40 floorset elevator:3 at 53 floor
+
+< elevator:5 at 40 floor,destination=56,flag=1,isalive=True > rearch  40 floor< elevator:3 at 53 floor,destination=-5,flag=-1,isalive=True > rearch  53 floor
+
+< elevator:3 at 53 floor,destination=-5,flag=-1,isalive=True > dont need open the door < elevator:5 at 40 floor,destination=56,flag=1,isalive=True > dont need open the door 
+
+set elevator:5 at 41 floor
+< elevator:5 at 41 floor,destination=56,flag=1,isalive=True > rearch  41 floor
+< elevator:5 at 41 floor,destination=56,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 52 floor
+< elevator:3 at 52 floor,destination=-5,flag=-1,isalive=True > rearch  52 floor
+< elevator:3 at 52 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:5 at 42 floor
+< elevator:5 at 42 floor,destination=56,flag=1,isalive=True > rearch  42 floor
+< elevator:5 at 42 floor,destination=56,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 51 floor
+< elevator:3 at 51 floor,destination=-5,flag=-1,isalive=True > rearch  51 floor
+< elevator:3 at 51 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+< elevator:4 at -5 floor,destination=None,flag=0,isalive=True > dont need open the door 
+set elevator:3 at 50 floor
+< elevator:3 at 50 floor,destination=-5,flag=-1,isalive=True > rearch  50 floor
+< elevator:3 at 50 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:5 at 43 floor
+< elevator:5 at 43 floor,destination=56,flag=1,isalive=True > rearch  43 floor
+< elevator:5 at 43 floor,destination=56,flag=1,isalive=True > dont need open the door 
+< elevator:4 at -5 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!
+< elevator:1 at 90 floor,destination=None,flag=0,isalive=True > dont need open the door 
+set elevator:3 at 49 floorset elevator:5 at 44 floor
+
+< elevator:5 at 44 floor,destination=56,flag=1,isalive=True > rearch  44 floor< elevator:3 at 49 floor,destination=-5,flag=-1,isalive=True > rearch  49 floor
+
+< elevator:5 at 44 floor,destination=56,flag=1,isalive=True > dont need open the door < elevator:3 at 49 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+
+< elevator:1 at 90 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!
+set elevator:5 at 45 floorset elevator:3 at 48 floor
+
+< elevator:5 at 45 floor,destination=56,flag=1,isalive=True > rearch  45 floor< elevator:3 at 48 floor,destination=-5,flag=-1,isalive=True > rearch  48 floor
+
+< elevator:3 at 48 floor,destination=-5,flag=-1,isalive=True > dont need open the door < elevator:5 at 45 floor,destination=56,flag=1,isalive=True > dont need open the door 
+
+set elevator:6 at 70 floor
+< elevator:6 at 70 floor,destination=85,flag=1,isalive=True > rearch  70 floor
+< elevator:6 at 70 floor,destination=85,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 47 floorset elevator:5 at 46 floor
+
+< elevator:3 at 47 floor,destination=-5,flag=-1,isalive=True > rearch  47 floor
+ < elevator:3 at 47 floor,destination=-5,flag=-1,isalive=True > dont need open the door < elevator:5 at 46 floor,destination=56,flag=1,isalive=True > rearch  46 floor
+
+< elevator:5 at 46 floor,destination=56,flag=1,isalive=True > dont need open the door 
+set elevator:6 at 71 floor
+< elevator:6 at 71 floor,destination=85,flag=1,isalive=True > rearch  71 floor
+< elevator:6 at 71 floor,destination=85,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 46 floor
+< elevator:3 at 46 floor,destination=-5,flag=-1,isalive=True > rearch  46 floor
+< elevator:3 at 46 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:5 at 47 floor
+< elevator:5 at 47 floor,destination=56,flag=1,isalive=True > rearch  47 floor
+< elevator:5 at 47 floor,destination=56,flag=1,isalive=True > dont need open the door 
+set elevator:6 at 72 floor
+< elevator:6 at 72 floor,destination=85,flag=1,isalive=True > rearch  72 floor
+< elevator:6 at 72 floor,destination=85,flag=1,isalive=True > dont need open the door 
+set elevator:5 at 48 floor
+< elevator:5 at 48 floor,destination=56,flag=1,isalive=True > rearch  48 floor
+< elevator:5 at 48 floor,destination=56,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 45 floor
+< elevator:3 at 45 floor,destination=-5,flag=-1,isalive=True > rearch  45 floor
+< elevator:3 at 45 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+choice add localtask
+add localtask floor=-2 to elevators[3],elevator name is:4
+< elevator:4 at -5 floor,destination=-2,flag=1,isalive=True > accept the floor=-2 you apply from localtask
+wait 1 second to accept new task
+set elevator:6 at 73 floor
+< elevator:6 at 73 floor,destination=85,flag=1,isalive=True > rearch  73 floor
+< elevator:6 at 73 floor,destination=85,flag=1,isalive=True > dont need open the door 
+set elevator:5 at 49 floorset elevator:3 at 44 floor
+
+< elevator:5 at 49 floor,destination=56,flag=1,isalive=True > rearch  49 floor< elevator:3 at 44 floor,destination=-5,flag=-1,isalive=True > rearch  44 floor
+
+< elevator:5 at 49 floor,destination=56,flag=1,isalive=True > dont need open the door 
+ < elevator:3 at 44 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:6 at 74 floor
+< elevator:6 at 74 floor,destination=85,flag=1,isalive=True > rearch  74 floor
+< elevator:6 at 74 floor,destination=85,flag=1,isalive=True > dont need open the door 
+set elevator:5 at 50 floorset elevator:3 at 43 floor
+
+< elevator:5 at 50 floor,destination=56,flag=1,isalive=True > rearch  50 floor< elevator:3 at 43 floor,destination=-5,flag=-1,isalive=True > rearch  43 floor
+
+< elevator:3 at 43 floor,destination=-5,flag=-1,isalive=True > dont need open the door < elevator:5 at 50 floor,destination=56,flag=1,isalive=True > dont need open the door 
+
+set elevator:6 at 75 floor
+< elevator:6 at 75 floor,destination=85,flag=1,isalive=True > rearch  75 floor
+< elevator:6 at 75 floor,destination=85,flag=1,isalive=True > dont need open the door 
+set elevator:5 at 51 floor
+< elevator:5 at 51 floor,destination=56,flag=1,isalive=True > rearch  51 floor
+< elevator:5 at 51 floor,destination=56,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 42 floor
+< elevator:3 at 42 floor,destination=-5,flag=-1,isalive=True > rearch  42 floor
+open door for person who in < elevator:3 at 42 floor,destination=-5,flag=-1,isalive=True >,
+set elevator:6 at 76 floor
+< elevator:6 at 76 floor,destination=85,flag=1,isalive=True > rearch  76 floor
+< elevator:6 at 76 floor,destination=85,flag=1,isalive=True > dont need open the door 
+set elevator:5 at 52 floor
+< elevator:5 at 52 floor,destination=56,flag=1,isalive=True > rearch  52 floor
+< elevator:5 at 52 floor,destination=56,flag=1,isalive=True > dont need open the door 
+set elevator:6 at 77 floor
+< elevator:6 at 77 floor,destination=85,flag=1,isalive=True > rearch  77 floor
+< elevator:6 at 77 floor,destination=85,flag=1,isalive=True > dont need open the door 
+set elevator:5 at 53 floor
+< elevator:5 at 53 floor,destination=56,flag=1,isalive=True > rearch  53 floor
+< elevator:5 at 53 floor,destination=56,flag=1,isalive=True > dont need open the door 
+set elevator:6 at 78 floor
+< elevator:6 at 78 floor,destination=85,flag=1,isalive=True > rearch  78 floor
+< elevator:6 at 78 floor,destination=85,flag=1,isalive=True > dont need open the door 
+< elevator:2 at 78 floor,destination=None,flag=0,isalive=True > dont need open the door 
+set elevator:5 at 54 floor
+< elevator:5 at 54 floor,destination=56,flag=1,isalive=True > rearch  54 floor
+< elevator:5 at 54 floor,destination=56,flag=1,isalive=True > dont need open the door 
+set elevator:6 at 79 floor
+< elevator:6 at 79 floor,destination=85,flag=1,isalive=True > rearch  79 floor
+< elevator:6 at 79 floor,destination=85,flag=1,isalive=True > dont need open the door 
+< elevator:2 at 78 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!
+set elevator:5 at 55 floor
+< elevator:5 at 55 floor,destination=56,flag=1,isalive=True > rearch  55 floor
+< elevator:5 at 55 floor,destination=56,flag=1,isalive=True > dont need open the door 
+set elevator:6 at 80 floor
+< elevator:6 at 80 floor,destination=85,flag=1,isalive=True > rearch  80 floor
+< elevator:6 at 80 floor,destination=85,flag=1,isalive=True > dont need open the door 
+set elevator:5 at 56 floor
+< elevator:5 at 56 floor,destination=56,flag=1,isalive=True > rearch  56 floor
+open door for person who in < elevator:5 at 56 floor,destination=56,flag=1,isalive=True >,
+set elevator:6 at 81 floor
+< elevator:6 at 81 floor,destination=85,flag=1,isalive=True > rearch  81 floor
+< elevator:6 at 81 floor,destination=85,flag=1,isalive=True > dont need open the door 
+set elevator:6 at 82 floor
+< elevator:6 at 82 floor,destination=85,flag=1,isalive=True > rearch  82 floor
+< elevator:6 at 82 floor,destination=85,flag=1,isalive=True > dont need open the door 
+--------------------------------
+--------------------------------
+current elevators count is : 6
+elevator:1 localtask is:set([])
+elevator:1 is empty, at 90 floor
+
+elevator:2 localtask is:set([])
+elevator:2 is empty, at 78 floor
+
+elevator:3 localtask is:set([35, -5])
+elevator:3 is runing,current_floor is:42,destination is -5
+
+elevator:4 localtask is:set([-2])
+elevator:4 is runing,current_floor is:-5,destination is -2
+
+elevator:5 localtask is:set([])
+elevator:5 is runing,current_floor is:56,destination is 56
+
+elevator:6 localtask is:set([85])
+elevator:6 is runing,current_floor is:82,destination is 85
+
+GlobalTask.task["down"] is set([])
+GlobalTask.task["up"] is set([])
+--------------------------------
+--------------------------------
+wait 10 second reflash  elevator status
+Thread-elevator-1 is runing
+Thread-elevator-2 is runing
+Thread-elevator-3 is runing
+Thread-elevator-4 is runing
+Thread-elevator-5 is runing
+Thread-elevator-6 is runing
+choice add new globaltask
+add flag=-1 ,floor=92 to globaltask
+someone wait down at 92 floor
+analyze the best blue print!
+GlobalTask.task["down"]=92 distancelist is [2, 14, 144, 97, 36, 10]
+< elevator:1 at 90 floor,destination=92,flag=1,isalive=True > accept the floor=92 you apply from globaltask
+< elevator:1 at 90 floor,destination=92,flag=1,isalive=True > accept globaltask flag=down,floor=92
+remove 92 from GlobalTask.task["down"]
+wait 1 second to accept new task
+set elevator:6 at 83 floor
+< elevator:6 at 83 floor,destination=85,flag=1,isalive=True > rearch  83 floor
+< elevator:6 at 83 floor,destination=85,flag=1,isalive=True > dont need open the door 
+set elevator:6 at 84 floor
+< elevator:6 at 84 floor,destination=85,flag=1,isalive=True > rearch  84 floor
+< elevator:6 at 84 floor,destination=85,flag=1,isalive=True > dont need open the door 
+set elevator:6 at 85 floor
+< elevator:6 at 85 floor,destination=85,flag=1,isalive=True > rearch  85 floor
+open door for person who in < elevator:6 at 85 floor,destination=85,flag=1,isalive=True >,
+set elevator:3 at 41 floor
+< elevator:3 at 41 floor,destination=-5,flag=-1,isalive=True > rearch  41 floor
+< elevator:3 at 41 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:3 at 40 floor
+< elevator:3 at 40 floor,destination=-5,flag=-1,isalive=True > rearch  40 floor
+< elevator:3 at 40 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:3 at 39 floor
+< elevator:3 at 39 floor,destination=-5,flag=-1,isalive=True > rearch  39 floor
+< elevator:3 at 39 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+< elevator:4 at -5 floor,destination=-2,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 38 floor
+< elevator:3 at 38 floor,destination=-5,flag=-1,isalive=True > rearch  38 floor
+< elevator:3 at 38 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:4 at -4 floor
+< elevator:4 at -4 floor,destination=-2,flag=1,isalive=True > rearch  -4 floor
+< elevator:4 at -4 floor,destination=-2,flag=1,isalive=True > dont need open the door 
+< elevator:1 at 90 floor,destination=92,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 37 floor
+< elevator:3 at 37 floor,destination=-5,flag=-1,isalive=True > rearch  37 floor
+< elevator:3 at 37 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:4 at -3 floor
+< elevator:4 at -3 floor,destination=-2,flag=1,isalive=True > rearch  -3 floor
+< elevator:4 at -3 floor,destination=-2,flag=1,isalive=True > dont need open the door 
+set elevator:1 at 91 floor
+< elevator:1 at 91 floor,destination=92,flag=1,isalive=True > rearch  91 floor
+< elevator:1 at 91 floor,destination=92,flag=1,isalive=True > dont need open the door 
+< elevator:5 at 56 floor,destination=56,flag=1,isalive=True > reach destination:56,set flag=0
+< elevator:5 at 56 floor,destination=None,flag=0,isalive=True > dont need open the door 
+set elevator:3 at 36 floor
+< elevator:3 at 36 floor,destination=-5,flag=-1,isalive=True > rearch  36 floor
+< elevator:3 at 36 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:4 at -2 floor
+< elevator:4 at -2 floor,destination=-2,flag=1,isalive=True > rearch  -2 floor
+open door for person who in < elevator:4 at -2 floor,destination=-2,flag=1,isalive=True >,
+set elevator:1 at 92 floor
+< elevator:1 at 92 floor,destination=92,flag=1,isalive=True > rearch  92 floor
+open door for person who in < elevator:1 at 92 floor,destination=92,flag=1,isalive=True >,
+< elevator:5 at 56 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!
+set elevator:3 at 35 floor
+< elevator:3 at 35 floor,destination=-5,flag=-1,isalive=True > rearch  35 floor
+open door for person who in < elevator:3 at 35 floor,destination=-5,flag=-1,isalive=True >,
+you choice random close a elevator
+close elevator:2,set flag=0,destination=current_floor
+wait 1 second to accept new task
+< elevator:6 at 85 floor,destination=85,flag=1,isalive=True > reach destination:85,set flag=0
+< elevator:6 at 85 floor,destination=None,flag=0,isalive=True > dont need open the door 
+< elevator:6 at 85 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!
+elevator:2 is broken at 78 floor,waiting for restart!!! 
+< elevator:4 at -2 floor,destination=-2,flag=1,isalive=True > reach destination:-2,set flag=0
+< elevator:4 at -2 floor,destination=None,flag=0,isalive=True > dont need open the door 
+< elevator:1 at 92 floor,destination=92,flag=1,isalive=True > reach destination:92,set flag=0
+< elevator:1 at 92 floor,destination=None,flag=0,isalive=True > dont need open the door 
+set elevator:3 at 34 floor
+< elevator:3 at 34 floor,destination=-5,flag=-1,isalive=True > rearch  34 floor
+< elevator:3 at 34 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+< elevator:4 at -2 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!
+< elevator:1 at 92 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!
+choice add localtask
+add localtask floor=73 to elevators[3],elevator name is:4
+< elevator:4 at -2 floor,destination=73,flag=1,isalive=True > accept the floor=73 you apply from localtask
+wait 1 second to accept new task
+set elevator:3 at 33 floor
+< elevator:3 at 33 floor,destination=-5,flag=-1,isalive=True > rearch  33 floor
+< elevator:3 at 33 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:3 at 32 floor
+< elevator:3 at 32 floor,destination=-5,flag=-1,isalive=True > rearch  32 floor
+< elevator:3 at 32 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:3 at 31 floor
+< elevator:3 at 31 floor,destination=-5,flag=-1,isalive=True > rearch  31 floor
+< elevator:3 at 31 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:3 at 30 floor
+< elevator:3 at 30 floor,destination=-5,flag=-1,isalive=True > rearch  30 floor
+< elevator:3 at 30 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:3 at 29 floor
+< elevator:3 at 29 floor,destination=-5,flag=-1,isalive=True > rearch  29 floor
+< elevator:3 at 29 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:3 at 28 floor
+< elevator:3 at 28 floor,destination=-5,flag=-1,isalive=True > rearch  28 floor
+< elevator:3 at 28 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:3 at 27 floor
+< elevator:3 at 27 floor,destination=-5,flag=-1,isalive=True > rearch  27 floor
+< elevator:3 at 27 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:3 at 26 floor
+< elevator:3 at 26 floor,destination=-5,flag=-1,isalive=True > rearch  26 floor
+< elevator:3 at 26 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:3 at 25 floor
+< elevator:3 at 25 floor,destination=-5,flag=-1,isalive=True > rearch  25 floor
+< elevator:3 at 25 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+< elevator:5 at 56 floor,destination=None,flag=0,isalive=True > dont need open the door 
+set elevator:3 at 24 floor
+< elevator:3 at 24 floor,destination=-5,flag=-1,isalive=True > rearch  24 floor
+< elevator:3 at 24 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+< elevator:5 at 56 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!
+choice add new globaltask
+add flag=-1 ,floor=75 to globaltask
+someone wait down at 75 floor
+analyze the best blue print!
+< elevator:2 at 78 floor,destination=None,flag=0,isalive=False > already stop
+GlobalTask.task["down"]=75 distancelist is [17, 200, 109, 77, 19, 10]
+< elevator:6 at 85 floor,destination=75,flag=-1,isalive=True > accept the floor=75 you apply from globaltask
+< elevator:6 at 85 floor,destination=75,flag=-1,isalive=True > accept globaltask flag=down,floor=75
+remove 75 from GlobalTask.task["down"]
+wait 1 second to accept new task
+set elevator:3 at 23 floor
+< elevator:3 at 23 floor,destination=-5,flag=-1,isalive=True > rearch  23 floor
+< elevator:3 at 23 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:3 at 22 floor
+< elevator:3 at 22 floor,destination=-5,flag=-1,isalive=True > rearch  22 floor
+< elevator:3 at 22 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:3 at 21 floor
+< elevator:3 at 21 floor,destination=-5,flag=-1,isalive=True > rearch  21 floor
+< elevator:3 at 21 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:3 at 20 floor
+< elevator:3 at 20 floor,destination=-5,flag=-1,isalive=True > rearch  20 floor
+< elevator:3 at 20 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+< elevator:6 at 85 floor,destination=75,flag=-1,isalive=True > dont need open the door 
+set elevator:3 at 19 floor
+< elevator:3 at 19 floor,destination=-5,flag=-1,isalive=True > rearch  19 floor
+< elevator:3 at 19 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:6 at 84 floor
+< elevator:6 at 84 floor,destination=75,flag=-1,isalive=True > rearch  84 floor
+< elevator:6 at 84 floor,destination=75,flag=-1,isalive=True > dont need open the door 
+set elevator:3 at 18 floor
+< elevator:3 at 18 floor,destination=-5,flag=-1,isalive=True > rearch  18 floor
+< elevator:3 at 18 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:6 at 83 floor
+< elevator:6 at 83 floor,destination=75,flag=-1,isalive=True > rearch  83 floor
+< elevator:6 at 83 floor,destination=75,flag=-1,isalive=True > dont need open the door 
+set elevator:3 at 17 floor
+< elevator:3 at 17 floor,destination=-5,flag=-1,isalive=True > rearch  17 floor
+< elevator:3 at 17 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:6 at 82 floor
+< elevator:6 at 82 floor,destination=75,flag=-1,isalive=True > rearch  82 floor
+< elevator:6 at 82 floor,destination=75,flag=-1,isalive=True > dont need open the door 
+set elevator:3 at 16 floor
+< elevator:3 at 16 floor,destination=-5,flag=-1,isalive=True > rearch  16 floor
+< elevator:3 at 16 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:6 at 81 floor
+< elevator:6 at 81 floor,destination=75,flag=-1,isalive=True > rearch  81 floor
+< elevator:6 at 81 floor,destination=75,flag=-1,isalive=True > dont need open the door 
+set elevator:3 at 15 floor
+< elevator:3 at 15 floor,destination=-5,flag=-1,isalive=True > rearch  15 floor
+< elevator:3 at 15 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:6 at 80 floor
+< elevator:6 at 80 floor,destination=75,flag=-1,isalive=True > rearch  80 floor
+< elevator:6 at 80 floor,destination=75,flag=-1,isalive=True > dont need open the door 
+set elevator:3 at 14 floor
+< elevator:3 at 14 floor,destination=-5,flag=-1,isalive=True > rearch  14 floor
+< elevator:3 at 14 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+< elevator:4 at -2 floor,destination=73,flag=1,isalive=True > dont need open the door 
+< elevator:1 at 92 floor,destination=None,flag=0,isalive=True > dont need open the door 
+set elevator:6 at 79 floor
+< elevator:6 at 79 floor,destination=75,flag=-1,isalive=True > rearch  79 floor
+< elevator:6 at 79 floor,destination=75,flag=-1,isalive=True > dont need open the door 
+choice add new globaltask
+add flag=-1 ,floor=6 to globaltask
+someone wait down at 6 floor
+analyze the best blue print!
+< elevator:2 at 78 floor,destination=None,flag=0,isalive=False > already stop
+GlobalTask.task["down"]=6 distancelist is [86, 200, 8, 142, 50, 73]
+< elevator:3 at 14 floor,destination=-5,flag=-1,isalive=True > accept the floor=6 you apply from globaltask
+< elevator:3 at 14 floor,destination=-5,flag=-1,isalive=True > accept globaltask flag=down,floor=6
+remove 6 from GlobalTask.task["down"]
+wait 1 second to accept new task
+set elevator:3 at 13 floor
+< elevator:3 at 13 floor,destination=-5,flag=-1,isalive=True > rearch  13 floor
+< elevator:3 at 13 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:4 at -1 floor
+< elevator:4 at -1 floor,destination=73,flag=1,isalive=True > rearch  -1 floor
+< elevator:4 at -1 floor,destination=73,flag=1,isalive=True > dont need open the door 
+< elevator:1 at 92 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!
+set elevator:6 at 78 floor
+< elevator:6 at 78 floor,destination=75,flag=-1,isalive=True > rearch  78 floor
+< elevator:6 at 78 floor,destination=75,flag=-1,isalive=True > dont need open the door 
+set elevator:3 at 12 floor
+< elevator:3 at 12 floor,destination=-5,flag=-1,isalive=True > rearch  12 floor
+< elevator:3 at 12 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:4 at 0 floor
+< elevator:4 at 0 floor,destination=73,flag=1,isalive=True > rearch  0 floor
+< elevator:4 at 0 floor,destination=73,flag=1,isalive=True > dont need open the door 
+set elevator:6 at 77 floor
+< elevator:6 at 77 floor,destination=75,flag=-1,isalive=True > rearch  77 floor
+< elevator:6 at 77 floor,destination=75,flag=-1,isalive=True > dont need open the door 
+set elevator:3 at 11 floor
+< elevator:3 at 11 floor,destination=-5,flag=-1,isalive=True > rearch  11 floor
+< elevator:3 at 11 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:4 at 1 floor
+< elevator:4 at 1 floor,destination=73,flag=1,isalive=True > rearch  1 floor
+< elevator:4 at 1 floor,destination=73,flag=1,isalive=True > dont need open the door 
+set elevator:6 at 76 floor
+< elevator:6 at 76 floor,destination=75,flag=-1,isalive=True > rearch  76 floor
+< elevator:6 at 76 floor,destination=75,flag=-1,isalive=True > dont need open the door 
+set elevator:3 at 10 floor
+< elevator:3 at 10 floor,destination=-5,flag=-1,isalive=True > rearch  10 floor
+< elevator:3 at 10 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:4 at 2 floor
+< elevator:4 at 2 floor,destination=73,flag=1,isalive=True > rearch  2 floor
+< elevator:4 at 2 floor,destination=73,flag=1,isalive=True > dont need open the door 
+set elevator:6 at 75 floor
+< elevator:6 at 75 floor,destination=75,flag=-1,isalive=True > rearch  75 floor
+open door for person who in < elevator:6 at 75 floor,destination=75,flag=-1,isalive=True >,
+set elevator:3 at 9 floor
+< elevator:3 at 9 floor,destination=-5,flag=-1,isalive=True > rearch  9 floor
+< elevator:3 at 9 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:4 at 3 floor
+< elevator:4 at 3 floor,destination=73,flag=1,isalive=True > rearch  3 floor
+< elevator:4 at 3 floor,destination=73,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 8 floor
+< elevator:3 at 8 floor,destination=-5,flag=-1,isalive=True > rearch  8 floor
+< elevator:3 at 8 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:4 at 4 floor
+< elevator:4 at 4 floor,destination=73,flag=1,isalive=True > rearch  4 floor
+< elevator:4 at 4 floor,destination=73,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 7 floor
+< elevator:3 at 7 floor,destination=-5,flag=-1,isalive=True > rearch  7 floor
+< elevator:3 at 7 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:4 at 5 floor
+< elevator:4 at 5 floor,destination=73,flag=1,isalive=True > rearch  5 floor
+< elevator:4 at 5 floor,destination=73,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 6 floor
+< elevator:3 at 6 floor,destination=-5,flag=-1,isalive=True > rearch  6 floor
+open door for person who in < elevator:3 at 6 floor,destination=-5,flag=-1,isalive=True >,
+set elevator:4 at 6 floor
+< elevator:4 at 6 floor,destination=73,flag=1,isalive=True > rearch  6 floor
+< elevator:4 at 6 floor,destination=73,flag=1,isalive=True > dont need open the door 
+set elevator:4 at 7 floor
+< elevator:4 at 7 floor,destination=73,flag=1,isalive=True > rearch  7 floor
+< elevator:4 at 7 floor,destination=73,flag=1,isalive=True > dont need open the door 
+set elevator:4 at 8 floor
+< elevator:4 at 8 floor,destination=73,flag=1,isalive=True > rearch  8 floor
+< elevator:4 at 8 floor,destination=73,flag=1,isalive=True > dont need open the door 
+< elevator:5 at 56 floor,destination=None,flag=0,isalive=True > dont need open the door 
+choice add new globaltask
+add flag=1 ,floor=73 to globaltask
+someone wait up at 73 floor
+analyze the best blue print!
+< elevator:2 at 78 floor,destination=None,flag=0,isalive=False > already stop
+GlobalTask.task["up"]=73 distancelist is [19, 200, 89, 65, 17, 2]
+< elevator:6 at 75 floor,destination=73,flag=-1,isalive=True > accept the floor=73 you apply from globaltask
+< elevator:6 at 75 floor,destination=73,flag=-1,isalive=True > accept globaltask flag=up,floor=73
+remove 73 from GlobalTask.task["up"]
+wait 1 second to accept new task
+set elevator:4 at 9 floor
+< elevator:4 at 9 floor,destination=73,flag=1,isalive=True > rearch  9 floor
+< elevator:4 at 9 floor,destination=73,flag=1,isalive=True > dont need open the door 
+< elevator:5 at 56 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!
+set elevator:4 at 10 floor
+< elevator:4 at 10 floor,destination=73,flag=1,isalive=True > rearch  10 floor
+< elevator:4 at 10 floor,destination=73,flag=1,isalive=True > dont need open the door 
+set elevator:4 at 11 floor
+< elevator:4 at 11 floor,destination=73,flag=1,isalive=True > rearch  11 floor
+< elevator:4 at 11 floor,destination=73,flag=1,isalive=True > dont need open the door 
+set elevator:4 at 12 floor
+< elevator:4 at 12 floor,destination=73,flag=1,isalive=True > rearch  12 floor
+< elevator:4 at 12 floor,destination=73,flag=1,isalive=True > dont need open the door 
+set elevator:6 at 74 floor
+< elevator:6 at 74 floor,destination=73,flag=-1,isalive=True > rearch  74 floor
+< elevator:6 at 74 floor,destination=73,flag=-1,isalive=True > dont need open the door 
+set elevator:4 at 13 floor
+< elevator:4 at 13 floor,destination=73,flag=1,isalive=True > rearch  13 floor
+< elevator:4 at 13 floor,destination=73,flag=1,isalive=True > dont need open the door 
+set elevator:6 at 73 floor
+< elevator:6 at 73 floor,destination=73,flag=-1,isalive=True > rearch  73 floor
+open door for person who in < elevator:6 at 73 floor,destination=73,flag=-1,isalive=True >,
+set elevator:4 at 14 floor
+< elevator:4 at 14 floor,destination=73,flag=1,isalive=True > rearch  14 floor
+< elevator:4 at 14 floor,destination=73,flag=1,isalive=True > dont need open the door 
+set elevator:4 at 15 floor
+< elevator:4 at 15 floor,destination=73,flag=1,isalive=True > rearch  15 floor
+< elevator:4 at 15 floor,destination=73,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 5 floor
+< elevator:3 at 5 floor,destination=-5,flag=-1,isalive=True > rearch  5 floor
+< elevator:3 at 5 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:4 at 16 floor
+< elevator:4 at 16 floor,destination=73,flag=1,isalive=True > rearch  16 floor
+< elevator:4 at 16 floor,destination=73,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 4 floor
+< elevator:3 at 4 floor,destination=-5,flag=-1,isalive=True > rearch  4 floor
+< elevator:3 at 4 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:4 at 17 floor
+< elevator:4 at 17 floor,destination=73,flag=1,isalive=True > rearch  17 floor
+< elevator:4 at 17 floor,destination=73,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 3 floor
+< elevator:3 at 3 floor,destination=-5,flag=-1,isalive=True > rearch  3 floor
+< elevator:3 at 3 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:4 at 18 floor
+< elevator:4 at 18 floor,destination=73,flag=1,isalive=True > rearch  18 floor
+< elevator:4 at 18 floor,destination=73,flag=1,isalive=True > dont need open the door 
+choice add localtask
+add localtask floor=39 to elevators[3],elevator name is:4
+< elevator:4 at 18 floor,destination=73,flag=1,isalive=True > accept the floor=39 you apply from localtask
+wait 1 second to accept new task
+set elevator:3 at 2 floor
+< elevator:3 at 2 floor,destination=-5,flag=-1,isalive=True > rearch  2 floor
+< elevator:3 at 2 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+< elevator:1 at 92 floor,destination=None,flag=0,isalive=True > dont need open the door set elevator:4 at 19 floor
+
+< elevator:4 at 19 floor,destination=73,flag=1,isalive=True > rearch  19 floor
+< elevator:4 at 19 floor,destination=73,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 1 floor
+< elevator:3 at 1 floor,destination=-5,flag=-1,isalive=True > rearch  1 floor
+< elevator:3 at 1 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:4 at 20 floor
+< elevator:4 at 20 floor,destination=73,flag=1,isalive=True > rearch  20 floor< elevator:1 at 92 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!
+
+< elevator:4 at 20 floor,destination=73,flag=1,isalive=True > dont need open the door 
+set elevator:3 at 0 floor
+< elevator:3 at 0 floor,destination=-5,flag=-1,isalive=True > rearch  0 floor
+< elevator:3 at 0 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:4 at 21 floor
+< elevator:4 at 21 floor,destination=73,flag=1,isalive=True > rearch  21 floor
+< elevator:4 at 21 floor,destination=73,flag=1,isalive=True > dont need open the door 
+set elevator:3 at -1 floor
+< elevator:3 at -1 floor,destination=-5,flag=-1,isalive=True > rearch  -1 floor
+< elevator:3 at -1 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:4 at 22 floor
+< elevator:4 at 22 floor,destination=73,flag=1,isalive=True > rearch  22 floor
+< elevator:4 at 22 floor,destination=73,flag=1,isalive=True > dont need open the door 
+set elevator:3 at -2 floor
+< elevator:3 at -2 floor,destination=-5,flag=-1,isalive=True > rearch  -2 floor
+< elevator:3 at -2 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:4 at 23 floor
+< elevator:4 at 23 floor,destination=73,flag=1,isalive=True > rearch  23 floor
+< elevator:4 at 23 floor,destination=73,flag=1,isalive=True > dont need open the door 
+< elevator:6 at 73 floor,destination=73,flag=-1,isalive=True > reach destination:73,set flag=0
+< elevator:6 at 73 floor,destination=None,flag=0,isalive=True > dont need open the door 
+set elevator:3 at -3 floor
+< elevator:3 at -3 floor,destination=-5,flag=-1,isalive=True > rearch  -3 floor
+< elevator:3 at -3 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:4 at 24 floor
+< elevator:4 at 24 floor,destination=73,flag=1,isalive=True > rearch  24 floor
+< elevator:4 at 24 floor,destination=73,flag=1,isalive=True > dont need open the door 
+< elevator:6 at 73 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!
+set elevator:3 at -4 floor
+< elevator:3 at -4 floor,destination=-5,flag=-1,isalive=True > rearch  -4 floor
+< elevator:3 at -4 floor,destination=-5,flag=-1,isalive=True > dont need open the door 
+set elevator:4 at 25 floor
+< elevator:4 at 25 floor,destination=73,flag=1,isalive=True > rearch  25 floor
+< elevator:4 at 25 floor,destination=73,flag=1,isalive=True > dont need open the door 
+set elevator:3 at -5 floor
+< elevator:3 at -5 floor,destination=-5,flag=-1,isalive=True > rearch  -5 floor
+open door for person who in < elevator:3 at -5 floor,destination=-5,flag=-1,isalive=True >,
+set elevator:4 at 26 floor
+< elevator:4 at 26 floor,destination=73,flag=1,isalive=True > rearch  26 floor
+< elevator:4 at 26 floor,destination=73,flag=1,isalive=True > dont need open the door 
+set elevator:4 at 27 floor
+< elevator:4 at 27 floor,destination=73,flag=1,isalive=True > rearch  27 floor
+< elevator:4 at 27 floor,destination=73,flag=1,isalive=True > dont need open the door 
+set elevator:4 at 28 floor
+< elevator:4 at 28 floor,destination=73,flag=1,isalive=True > rearch  28 floor
+< elevator:4 at 28 floor,destination=73,flag=1,isalive=True > dont need open the door 
+choice add localtask
+add localtask floor=33 to elevators[1],elevator name is:2
+< elevator:2 at 78 floor,destination=None,flag=0,isalive=False > cant accept the floor=33 you apply from localtask
+wait 1 second to accept new task
+set elevator:4 at 29 floor
+< elevator:4 at 29 floor,destination=73,flag=1,isalive=True > rearch  29 floor
+< elevator:4 at 29 floor,destination=73,flag=1,isalive=True > dont need open the door 
+< elevator:5 at 56 floor,destination=None,flag=0,isalive=True > dont need open the door 
+set elevator:4 at 30 floor
+< elevator:4 at 30 floor,destination=73,flag=1,isalive=True > rearch  30 floor
+< elevator:4 at 30 floor,destination=73,flag=1,isalive=True > dont need open the door 
+< elevator:5 at 56 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!
+set elevator:4 at 31 floor
+< elevator:4 at 31 floor,destination=73,flag=1,isalive=True > rearch  31 floor
+< elevator:4 at 31 floor,destination=73,flag=1,isalive=True > dont need open the door 
+set elevator:4 at 32 floor
+< elevator:4 at 32 floor,destination=73,flag=1,isalive=True > rearch  32 floor
+< elevator:4 at 32 floor,destination=73,flag=1,isalive=True > dont need open the door 
+set elevator:4 at 33 floor
+< elevator:4 at 33 floor,destination=73,flag=1,isalive=True > rearch  33 floor
+< elevator:4 at 33 floor,destination=73,flag=1,isalive=True > dont need open the door 
+set elevator:4 at 34 floor
+< elevator:4 at 34 floor,destination=73,flag=1,isalive=True > rearch  34 floor
+< elevator:4 at 34 floor,destination=73,flag=1,isalive=True > dont need open the door 
+set elevator:4 at 35 floor
+< elevator:4 at 35 floor,destination=73,flag=1,isalive=True > rearch  35 floor
+< elevator:4 at 35 floor,destination=73,flag=1,isalive=True > dont need open the door 
+< elevator:3 at -5 floor,destination=-5,flag=-1,isalive=True > reach destination:-5,set flag=0
+< elevator:3 at -5 floor,destination=None,flag=0,isalive=True > dont need open the door 
+set elevator:4 at 36 floor
+< elevator:4 at 36 floor,destination=73,flag=1,isalive=True > rearch  36 floor
+< elevator:4 at 36 floor,destination=73,flag=1,isalive=True > dont need open the door 
+< elevator:3 at -5 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!
+set elevator:4 at 37 floor
+< elevator:4 at 37 floor,destination=73,flag=1,isalive=True > rearch  37 floor
+< elevator:4 at 37 floor,destination=73,flag=1,isalive=True > dont need open the door 
+set elevator:4 at 38 floor
+< elevator:4 at 38 floor,destination=73,flag=1,isalive=True > rearch  38 floor
+< elevator:4 at 38 floor,destination=73,flag=1,isalive=True > dont need open the door 
+choice restart closed elevator
+try restart all stop elevator
+restart elevator:2 at 78 floor,flag is:0
+wait 1 second to accept new task
+set elevator:4 at 39 floor
+< elevator:4 at 39 floor,destination=73,flag=1,isalive=True > rearch  39 floor
+open door for person who in < elevator:4 at 39 floor,destination=73,flag=1,isalive=True >,
+< elevator:1 at 92 floor,destination=None,flag=0,isalive=True > dont need open the door 
+< elevator:1 at 92 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!
+< elevator:6 at 73 floor,destination=None,flag=0,isalive=True > dont need open the door 
+< elevator:6 at 73 floor,destination=None,flag=0,isalive=True > has no task,sleep 2 second!

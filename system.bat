@@ -1,0 +1,1 @@
+python elevatorsystem.py >system.txt
