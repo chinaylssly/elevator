@@ -70,7 +70,7 @@ def random_input(schedule,ts):
 
 
         print u'wait 1 second to accept new task'
-        sleep(1)
+        sleep(0.1)
 
 
 def show_status(schedule):
@@ -85,8 +85,9 @@ def show_status(schedule):
 
 def run_elevator(elevator):
     ##根据index启动电梯，也可以根据电梯名字，但没必要
+    while True:
+        elevator.run()
 
-    elevator.run()
 
 
 def add_elevator_to_ts(elevator,ts):
@@ -125,7 +126,7 @@ def main():
         ts.append(t)
 
 
-    broken_Thread=[]
+    broken_list=[]
     ##用以存储挂掉的电梯线程
 
     while True:
@@ -135,7 +136,7 @@ def main():
 
             if t.is_alive():
 
-                print u'%s is runing'%(t.name)
+                print u'%s is alive'%(t.name)
 
             else:
                 print u'try start new elevator'

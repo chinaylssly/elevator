@@ -6,6 +6,7 @@ from threading import Thread
 from config import MAX_FLOOR,MIN_FLOOR,INIT_FLOOR
 from globaltask import GlobalTask
 from traceback import format_exc
+import random
 
 class ElevatorBase(object):
     ##电梯
@@ -17,7 +18,6 @@ class ElevatorBase(object):
         self.min_floor=MIN_FLOOR
         self.max_floor=MAX_FLOOR
         self._current_floor=self.init_floor
-        self.flag=0
 
 
         print u'create elevator:%s successfully!'%(self.name)
@@ -57,32 +57,85 @@ class Elevator(ElevatorBase):
     def __init__(self,name='child'):
 
         ElevatorBase.__init__(self,name=name)
+
         self.globaltask=GlobalTask.task
         self.localtask=set()
         self.destination=None
-        self.flag=0
         self.isalive=True
+        self.ismoving=False
+        self.isopen=False
+
 
     def __str__(self,):
 
         return '< elevator:%s at %s floor,destination=%s,flag=%s,isalive=%s >'\
         %(self.name,self.current_floor,self.destination,self.flag,self.isalive)
 
+
+    @property
+    def flag(self,):
+        ##电梯运行方向，设置为只读
+
+        if self.destination is None:
+            self._flag=0
+
+        else:
+            if self.destination > self.current_floor:
+                self._flag=1
+
+            elif self.destination < self.current_floor:
+                self._flag=-1
+
+            else:
+                self._flag=0
+
+        return self._flag
+
+
+
     def stop(self,):
+        ##电梯停运，检修
 
         self.isalive=False
         self.localtask=set()
-        ##stop之后会抹除destination,也可以选择不抹除，视需求而定
-        self.flag=0
         self.destination=None
 
-        print u'close elevator:%s,set flag=0,destination=current_floor'%(self.name)
+        print u'stop %s'%(self)
 
     def restart(self,):
         ##重启电梯，逻辑上需要在stop之后才能调用restart
 
         self.isalive=True
-        print u'restart elevator:%s at %s floor,flag is:%s'%(self.name,self.current_floor,self.flag)
+        self.localtask=set()
+        self.destination=None
+        print u'restart %s'%(self)
+        # self.run()
+
+
+    def open_door(self,):
+        ##开启电梯门
+
+        if  self.ismoving:
+
+            print u'Warning: %s is runing,Disallow open the door!'%(self,)
+
+        else:
+            self.isopen=True
+            print u'%s open the door,then sleep 1 second!'%(self,)
+            sleep(1)
+
+    def close_door(self,):
+        ##关闭电梯门
+
+        if self.isopen:
+
+            self.isopen=False
+            print u'%s close the door'%(self,)
+
+        else:
+            print u'%s door is closed,with no need for closing!'%(self,)
+
+
 
     @wapper_localtask
     def add_localtask(self,floor,refer='localtask'):
@@ -96,6 +149,7 @@ class Elevator(ElevatorBase):
 
                 if floor>self.current_floor:
                     isaccept=False
+
                 else:
                     isaccept=True
                     self.destination=min(self.destination,floor)
@@ -109,130 +163,101 @@ class Elevator(ElevatorBase):
                     isaccept=True
                     self.destination=max(self.destination,floor)
 
+
             elif self.flag==0:
-                ##电梯未运行状态
-
-                self.destination=floor
-
-                if floor>self.current_floor:
-                    ##设置电梯为上行
-
-                    self.flag=1
-                    isaccept=True
-
-                   
-
-                elif floor<self.current_floor:
-                    #设置电梯为下行
-
-                    self.flag=-1
-                    isaccept=True
-                   
 
 
-                elif floor==self.current_floor:
+                if self.current_floor == floor:
 
-                    ##电梯保持原地不动,
-
-                    if refer=='globaltask':
-
-                        self.flag=0
-                        self.destination=floor
-                        isaccept=True
-
-                    elif refer=='localtask':
-                        self.flag=0
+                    if refer == 'localtask':
                         isaccept=False
-                        self.destination=None
 
+                    elif refer=='globaltask':
+                        isaccept=True
+                        self.destination=floor
 
-        
+                else:
+
+                    isaccept=True
+                    self.destination=floor
+            
         else:
             ##电梯stop，不接受任何任务
             isaccept=False
 
-
-
-
         if isaccept:
-
-            print u'%s accept the floor=%s you apply from %s'%(self,floor,refer)
+            print u'%s accept task %s from %s'%(self,floor,refer)
             self.localtask.add(floor)
-            
+
         else:
-            print u'%s cant accept the floor=%s you apply from %s'%(self,floor,refer)
+            print u'%s ignore task %s from %s'%(self,floor,refer)
 
         return isaccept
-        ##判断floor是否成功加入localtask
 
 
-    def whether_open_by_local(self,):
+
+    def whether_open_door_when_runing(self,):
         ##根据本地任务判断是否打开电梯门
 
         if self.current_floor in self.localtask:
+            ##有可能判断是否开门的时候，isalive恰好被更改了
 
-            print u'open door for person who in %s,'%(self)
-            self.localtask.remove(self.current_floor)
+            self.open_door()
+            self.close_door()
+
+            try:
+                print u'%s remove %s from localtask:%s'%(self,self.current_floor,self.localtask)
+                self.localtask.remove(self.current_floor)
+            except:
+                raise
+                
             return True
 
         else:
-            print u'%s dont need open the door '%(self)
+            print u'%s with no need for open the door,sleep 0.1 second!'%(self)
             return False
-
 
 
     def run(self,):
 
-        while True:
+        print u'run %s'%(self)
+
+        while self.isalive:
+
             try:
 
-                while self.isalive:
+                isopen=self.whether_open_door_when_runing()
 
-                    isopen=self.whether_open_by_local()
+                if self.current_floor == self.destination:
 
-                    if isopen:
-                        sleep(1)
-                    else:
-                        sleep(0.1)
-
-                    if self.flag:
-                        ##self.flag==-1 or self.flag==1
-
-                        if self.current_floor==self.destination:
-                            print u'%s reach destination:%s,set flag=0'%(self,self.destination)
-                            self.flag=0
-                            self.destination=None
-                            break
-
-                        if self.flag==-1:
-                            self.current_floor-=1
-                        elif self.flag==1:
-                            self.current_floor+=1
-
-                        print u'%s rearch  %s floor'%(self,self.current_floor)
-        
+                        print u'%s reach destination'%(self)
                         
-                    else:
+                        self.destination=None
+              
+                if self.flag==-1:
+                    self.current_floor-=1
+                    print u'%s rearch new floor'%(self)
 
-                        print u'%s has no task,sleep 2 second!'%(self)
-                        sleep(2)
-
+                elif self.flag==1:
+                    self.current_floor+=1
+                    print u'%s rearch new floor'%(self)
+                    
+    
                 else:
-                    ##电梯brenk
-                    print u'elevator:%s is broken at %s floor,waiting for restart!!! '%(self.name,self.current_floor)
-                    sleep(10)
+                    print u'%s has no task,sleep 2 second!'%(self)
+                    sleep(2)
 
             except:
 
-                
-                print u'catch except:%s when elevator:%s runing'%(format_exc(),self.name)
+                print u'catch exception when elevator:%s runing,will stop this elevator'%(self.name)
+                print u'%s traceback info: \n%s'%(self,format_exc())
+                self.stop()
+        else:
 
-                self.isalive=False
-                print u'set elevator:%s isalive:%s'%(self.name,self.isalive)
+            print u'%s is broken ,sleep 5 second waiting for restart!!! '%(self)
+            sleep(5)
 
-                self.flag=0
-                self.destination=None
-
+       
 
 
 def test_elevator(elevator):
@@ -254,7 +279,9 @@ def test():
         while True: 
 
             if elevator.flag ==0:
-                elevator.add_localtask(8,refer='globaltask')
+
+                refer=random.choice(['globaltask','localtask'])
+                elevator.add_localtask(8,refer=refer)
                 
             else:
                 print u'pass add input'
