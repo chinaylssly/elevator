@@ -92,7 +92,6 @@ class Elevator(ElevatorBase):
         return self._flag
 
 
-
     def stop(self,):
         ##电梯停运，检修
 
@@ -134,7 +133,6 @@ class Elevator(ElevatorBase):
 
         else:
             print u'%s door is closed,with no need for closing!'%(self,)
-
 
 
     @wapper_localtask
@@ -231,7 +229,6 @@ class Elevator(ElevatorBase):
                 if self.current_floor == self.destination:
 
                         print u'%s reach destination'%(self)
-                        
                         self.destination=None
               
                 if self.flag==-1:
@@ -258,7 +255,6 @@ class Elevator(ElevatorBase):
             sleep(5)
 
        
-
 
 def test_elevator(elevator):
 

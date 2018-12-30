@@ -26,15 +26,13 @@ class Schedule(object):
         self.GlobalTask=GlobalTask
 
     def __new__(cls):
+        ##单例模型
 
         if hasattr(cls,'instance'):
-
             print u'Schedule exists instance'
 
         else:
-
             cls.instance=object.__new__(cls)
-
         return cls.instance
 
 
@@ -49,20 +47,15 @@ class Schedule(object):
                     distance=floor - elevator.current_floor
 
                 elif floor < elevator.destination and floor >= elevator.current_floor:
-
                     if task_flag==1:
                         distance=floor - elevator.current_floor
 
                     else:
-
                         # distance=elevator.destination  - elevator.current_floor + elevator.destination - floor
                         distance=MAX_FLOOR*2
-
                 else:
-
                     # distance=elevator.destination  - elevator.current_floor + elevator.destination - floor
                     distance=MAX_FLOOR*2
-
 
             elif elevator.flag==0:
                 distance=abs(elevator.current_floor - floor)
@@ -87,17 +80,17 @@ class Schedule(object):
 
         else:
             ##elevator已关闭
+
             print u'%s already stop'%(elevator)
             distance=MAX_FLOOR*2
 
         return distance
 
+
     def add_globaltask_to_localtask(self,):
-        ##add_globaltask_to_localtask
         ##任务分配算法
             
         flagdict={'exigency_up':1,'up':1,'exigency_down':-1,'down':-1}
-
         print u'analyze the best blue print!'
 
         ##deepcopy一个globaltask的副本，集合和字典在遍历的时候不能被修改
@@ -106,11 +99,9 @@ class Schedule(object):
         for key,value in tempdict.items():
 
             task_flag=flagdict.get(key)
-
             for floor in value:
 
                 distancelist=[]
-
                 for elevator in self.elevators:
 
                     distance=self.analyze_distance(elevator=elevator,task_flag=task_flag,floor=floor)
@@ -149,7 +140,6 @@ class Schedule(object):
         ##向电梯添加本地任务
 
         if index < len(self.elevators):
-
             self.elevators[index].add_localtask(floor=floor,refer='localtask')
 
         else:
@@ -176,7 +166,6 @@ class Schedule(object):
         ##增加电梯
 
         elevator=FactoryElevator.add_elevator()
-
         self.elevators.append(elevator)
         return elevator
 
@@ -193,21 +182,13 @@ class Schedule(object):
         for elevator in self.elevators:
             ##已启动的电梯不受影响
 
-            if name is None:
-               
-                if elevator.isalive is False:
-                    
+            if name is None: 
+                if elevator.isalive is False:  
                     elevator.restart()
         
             else:
                 if elevator.name == name:
-                    
                     elevator.restart()
-
-
-
-
-
 
 
     def show_all_elevators_status(self,):
@@ -235,184 +216,12 @@ class Schedule(object):
                 print u'%s already broken, task is: %s'%(elevator,elevator.localtask)
                 print 
 
-
-
         for key,value in GlobalTask.task.items():
 
             print u'GlobalTask.task["%s"] is %s'%(key,value)
 
-
         print u'--------------------------------'
         print u'--------------------------------'
-
-
-
-
-def accept_input(schedule):
-
-    while True:
-        flag=raw_input('input "l" run add_localtask,input "g" run add_globaltask:')
-
-        if flag=='l':
-
-            index=raw_input(u'choose which evevator you want add localtask:')
-            floor=raw_input(u'which gloor you want reacher:')
-
-            schedule.add_localtask_by_elevator_index(index=int(index),floor=int(floor))
-
-        elif flag=='g':
-
-            flag=raw_input(u'choose which flag you want add globaltask:')
-            floor=raw_input(u'which gloor you want reacher:')
-            schedule.add_globaltask_with_flag(floor=int(flag),flag=int(flag))
-
-        schedule.add_globaltask_to_localtask()
-
-        sleep(1)
-
-def random_input(schedule,ts):
-
-    # elevators_count=schedule.get_elevators_count()
-    ##模拟输入
-    
-    # l=['l','g','L','G','l','l','g','L','G','l','l','g','L','G','l','a','s']
-    l=['l','g','a','s']
-
-    while True:
-        elevators_count=schedule.get_elevators_count()
-        flag=random.choice(l)
-        print u'current choice l is:%s'%l
-        if flag=='l':
-
-            index=random.choice(range(elevators_count))
-            floor=random.choice(range(MIN_FLOOR,MAX_FLOOR+1))
-            print u'add localtask floor=%s to elevators[%s]'%(floor,index)
-            schedule.add_localtask_by_elevator_index(index=int(index),floor=int(floor))
-
-
-        elif flag=='g':
-
-            flag=random.choice([-1,1])
-            floor=random.choice(range(MIN_FLOOR,MAX_FLOOR+1))
-            print u'add flag=%s ,floor=%s to globaltask'%(flag,floor)
-            schedule.add_globaltask_with_flag(flag=int(flag),floor=int(floor))
-            schedule.add_globaltask_to_localtask()
-
-        elif flag=='a':
-
-            print u'choice add new elevator'
-            if FactoryElevator.count<6:
-                elevator=schedule.add_elevator()
-                print u'current elevators count is:%s'%(FactoryElevator.count)
-
-                run=elevator.run
-                t=Thread(target=run,args=())
-                ts.append(t)
-                print u'add new elevator:%s to ts'%(elevator.name)
-            else:
-
-                print 'elevators count reacher max count'
-                l.remove(flag)
-
-        elif flag =='s':
-            ##随机关闭一部电梯
-
-            print u'you choice random close a elevator'
-            elevator=random.choice(schedule.elevators)
-            l.remove(flag)
-            elevator.stop()
-            
-
-
-        print u'wait 1 second to accept new task'
-        sleep(1)
-
-
-def show_status(schedule):
-    ##监控电梯系统
-
-    while True:
-
-        schedule.show_all_elevators_status()
-        print u'wait 10 second reflash  elevator status'
-        sleep(10)
-
-
-def run_elevator(schedule,index):
-    ##根据index启动电梯，也可以根据电梯名字，但没必要
-    while True:
-        schedule.elevators[index].run()
-
-
-def add_elevator(schedule,ts):
-    ##增加一部电梯
-
-    elevator=schedule.add_elevator()
-    run=elevator.run
-    t=Thread(target=run,args=())
-    ts.append(t)
-
-def restart_elevator(schedule,name=None):
-    ##重启电梯
-
-    count=0
-    while True:
-
-        schedule.restart_elevator(name=name)
-        sleep(60)
-        print u'sleep 60 second wait for stop elevator'
-        count+=1
-
-        if count==10:
-            print u'wont check stop elevator any more'
-            break
-
-
-
-def main():
-
-    schedule=Schedule()
-    elevators_count=schedule.get_elevators_count()
-    ts=[]
-    t1=Thread(target=random_input,args=(schedule,ts))
-    ##任务线程
-    t2=Thread(target=show_status,args=(schedule,))
-    ##监控线程
-
-    t3=Thread(target=restart_elevator,args=(schedule,))
-    # ##重启线程
-
-    t1.start()
-    t2.start()
-    t3.start()
-
-    for i in range(elevators_count):
-
-        t=Thread(target=run_elevator,args=(schedule,i))
-
-        ts.append(t)
-
-
-    while True:
-        ##用于监听是否有新电梯加入线程
-
-
-        for t in ts:
-
-            if t.is_alive():
-
-                print u'ts["%s"] is runing'%(t.name)
-
-            else:
-                print u'start new Thread for  new elevator'
-                t.start()
-
-        sleep(10)
-
-
-
-
-
 
 
 
@@ -423,7 +232,6 @@ def test():
 
 if __name__ =='__main__':
 
-    # test()
-    main()
+    test()
 
 

@@ -20,21 +20,20 @@ def random_input(schedule,ts):
 
     while True:
 
-        elevators_count=schedule.get_elevators_count()
         flag=random.choice(l)
 
         if flag=='l':
 
             print u'choice add localtask'
-            index=random.choice(range(elevators_count))
+            elevator=random.choice(schedule.elevators)
             floor=random.choice(range(MIN_FLOOR,MAX_FLOOR+1))
-            elevator=schedule.elevators[index]
-            print u'add localtask floor=%s to elevators[%s],elevator name is:%s'%(floor,index,elevator.name)
-            schedule.add_localtask_by_elevator_index(index=int(index),floor=int(floor))
+            print u'add localtask floor=%s to %s'%(floor,elevator)
+            elevator.add_localtask(floor=floor)
 
 
         elif flag=='g':
-            print u'choice add new globaltask'
+
+            print u'choice add globaltask'
             flag=random.choice([-1,1])
             floor=random.choice(range(MIN_FLOOR,MAX_FLOOR+1))
             print u'add flag=%s ,floor=%s to globaltask'%(flag,floor)
@@ -47,10 +46,10 @@ def random_input(schedule,ts):
             if FactoryElevator.count<6:
                 elevator=schedule.add_elevator()
                 print u'current elevators count is:%s'%(FactoryElevator.count)
-                add_elevator_to_ts(elevator,ts)
-            else:
+                add_elevator(elevator,ts)
 
-                print 'elevators count reacher max count'
+            else:
+                print 'elevators count reach max count'
                 l.remove(flag)
 
         elif flag =='s':
@@ -62,15 +61,14 @@ def random_input(schedule,ts):
             elevator.stop()
 
         elif flag =='r':
+            ##重启电梯
 
             print u'choice restart closed elevator'
             schedule.restart_elevator()
 
-            
 
-
-        print u'wait 1 second to accept new task'
-        sleep(0.1)
+        print u'wait 0.2 second to accept new task'
+        sleep(0.2)
 
 
 def show_status(schedule):
@@ -85,20 +83,18 @@ def show_status(schedule):
 
 def run_elevator(elevator):
     ##根据index启动电梯，也可以根据电梯名字，但没必要
+
     while True:
         elevator.run()
 
 
-
-def add_elevator_to_ts(elevator,ts):
+def add_elevator(elevator,ts):
 
     print u'create new Thread for elevator:%s'%(elevator.name)
-    run=elevator.run
     name=u'Thread-elevator-%s'%(elevator.name)
-    t=Thread(target=run,args=(),name=name)
+    t=Thread(target=run_elevator,args=(elevator,),name=name)
     ts.append(t)
-
-
+    t.start()
 
 
 
@@ -108,7 +104,10 @@ def add_elevator_to_ts(elevator,ts):
 def main():
 
     schedule=Schedule()
+
     ts=[]
+    ##存放电梯运行的线程
+
     t1=Thread(target=random_input,args=(schedule,ts),name='Thread-task')
     ##任务线程
 
@@ -126,11 +125,13 @@ def main():
         ts.append(t)
 
 
-    broken_list=[]
-    ##用以存储挂掉的电梯线程
+    
 
     while True:
-        ##用于监听是否有新电梯加入线程
+        ##用于监听是否有运行中的电梯线程挂掉
+
+        broken_list=[]
+         ##用于存放挂掉的线程
 
         for t in ts:
 
@@ -139,32 +140,23 @@ def main():
                 print u'%s is alive'%(t.name)
 
             else:
-                print u'try start new elevator'
+                print u'%s is broken'%(t.name)
+                broken_list.append(t)
 
-                try:
-                    t.start()
-                except:
-                ##捕捉线程已经启动过，但任务结束的异常
-                    print u'something wrong at: %s' %(t.name)
+                ##线程结束了，对应的电梯就无法启动了，那么需要开辟一个新的线程运行该电梯
+                for elevator in schedule.elevators:
+                    name=u'Thread-elevator-%s'%elevator.name
+                    if  name ==t.name:
+                        add_elevator(elevator,ts)
+                        print u'apppend broken Thread:%s back to ts'%(t.name)
+                        break
 
-                    # ts.remove(t)
-                    # print u'remove broken Thread:%s'%(t.name)
-
-                    broken_list.apppend(t)
-                    print u'apppend broken %s to broken_list'%(t.name)
-
-                    ##线程结束了，对应的电梯无法启动了，那么需要开辟一个新的线程运行该电梯
-                    for elevator in schedule.elevators:
-                        name=u'Thread-elevator-%s'%elevator.name
-                        if  name ==t.name:
-                            add_elevator_to_ts(elevator,ts)
-                            print u'apppend broken Thread:%s back to ts'%(t.name)
-                            break
-
+        for t in broken_list:
+            if t in ts:
+                ts.remove(t)
+                ##从ts中移除挂掉的线程
 
         sleep(10)
-
-
 
 
 
